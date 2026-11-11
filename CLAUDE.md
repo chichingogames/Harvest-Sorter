@@ -4,9 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project state
 
-Harvest-Sorter is a Unity **6000.3.17f1** mobile game project (URP, new Input System) that is still the
-bare URP Blank template: only `Assets/Scenes/SampleScene.unity`, the template `TutorialInfo/` readme
-scripts, and the URP settings assets exist. No game code has been written yet.
+Harvest-Sorter is a Unity **6000.3.17f1** mobile game project (URP, new Input System). The folder layout
+from skeleton §2 exists (empty folders hold a `.gitkeep`) and the only scene is
+`Assets/Game Assets/Scenes/Game.unity`. No game code has been written yet. `Essentials/` is empty, because
+the framework files from skeleton §13 step 2 haven't been copied in. `C:\Project\Shift-Sort` is the
+reference project built on the same skeleton.
+
+Unity agent skills (from `npx skills add Unity-Technologies/skills`) live in `.agents/skills/`, tracked by
+`skills-lock.json`. `.claude/skills/` is a Windows junction pointing at the same files.
 
 The intended architecture is defined in **`skeleton.md`** (the structure of a previous game, Color Farm,
 stripped of its gameplay). Read it before creating any game code — it is the spec for folder layout,
@@ -58,9 +63,13 @@ rough compile check. `Library/`, `Temp/`, `Logs/`, `UserSettings/` are Unity cac
   wiring or Editor builders. Runtime code never touches `UnityEditor` without `#if UNITY_EDITOR`.
 - Naming: `Manager_X`, `PopUp_X`, `UI_X`; `[SerializeField] private _camelCase` exposed via expression-bodied properties.
 
-## Setup still pending (skeleton §13)
+## Third-party setup
 
-`activeInputHandler` in ProjectSettings is currently `1` (new Input System only — correct). Not yet
-installed: DOTween, TMP Essential Resources, Haptic Feedback (`https://github.com/CandyCoded/HapticFeedback.git#v1.0.3`;
-wrap calls in `#if UNITY_ANDROID || UNITY_IOS || UNITY_EDITOR`), and the copied Sortify `[Button]` source.
-Android `applicationIdentifier` is still the template default.
+- **DOTween** is in `Assets/Plugins/Demigiant/`, with `Resources/DOTweenSettings.asset`, copied from Shift-Sort
+  after its setup was already done. The `DOTWEEN` define is set for Android, Standalone and iPhone.
+- **TMP Essential Resources** are in `Assets/TextMesh Pro/`.
+- **Haptic Feedback** is installed as a git package (`xyz.candycoded.hapticfeedback`). It only compiles
+  for Android, iOS and the Editor, so wrap calls in `#if UNITY_ANDROID || UNITY_IOS || UNITY_EDITOR`.
+- **Sortify `[Button]`** source is in `Assets/Game Assets/Scripts/Sortify/`.
+- Active Input Handling is set to the new Input System only.
+- The Android `applicationIdentifier` is still the template default.
