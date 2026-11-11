@@ -18,9 +18,10 @@ public static class SurfaceMaterialBuilder
     private const string MaterialsPath = "Assets/Game Assets/Materials/";
     private const string ModelsPath = "Assets/Game Assets/Models";
     private const string LitShader = "Universal Render Pipeline/Lit";
+    private const int MaxTextureSize = 256;
 
     [Serializable] private class Spec { public Surface[] materials; }
-    [Serializable] private class Surface { public string sourceName; public string name; public string family; public string albedo; public string normal; public float tileMeters; public float metallic; public float roughness; }
+    [Serializable] private class Surface { public string sourceName; public string name; public string family; public string albedo; public float tileMeters; }
 
     [MenuItem("Harvest Sorter/Apply Surface Materials")]
     public static void Apply()
@@ -51,11 +52,16 @@ public static class SurfaceMaterialBuilder
         mat.SetTexture("_BaseMap", Load(surface.albedo));
         mat.SetTextureScale("_BaseMap", Vector2.one);
         mat.SetColor("_BaseColor", Color.white); // the albedo already carries the swatch colour
-        mat.SetTexture("_BumpMap", Load(surface.normal));
-        mat.SetFloat("_BumpScale", 1f);
-        mat.EnableKeyword("_NORMALMAP");
-        mat.SetFloat("_Metallic", surface.metallic);
-        mat.SetFloat("_Smoothness", 1f - surface.roughness);
+        // Hyper-casual look: matte and flat. No normal map, specular highlights or environment reflections,
+        // which also keeps the shader cheap on mobile.
+        mat.SetTexture("_BumpMap", null);
+        mat.DisableKeyword("_NORMALMAP");
+        mat.SetFloat("_Metallic", 0f);
+        mat.SetFloat("_Smoothness", 0f);
+        mat.SetFloat("_SpecularHighlights", 0f);
+        mat.EnableKeyword("_SPECULARHIGHLIGHTS_OFF");
+        mat.SetFloat("_EnvironmentReflections", 0f);
+        mat.EnableKeyword("_ENVIRONMENTREFLECTIONS_OFF");
         EditorUtility.SetDirty(mat);
         return mat;
     }
@@ -90,20 +96,17 @@ public static class SurfaceMaterialBuilder
 
     private static void ConfigureTextures(IEnumerable<Surface> surfaces)
     {
-        var normals = new HashSet<string>(surfaces.Select(s => s.normal));
-        foreach (var file in surfaces.Select(s => s.albedo).Concat(normals).Distinct())
+        foreach (var file in surfaces.Select(s => s.albedo).Distinct())
         {
             var importer = (TextureImporter)AssetImporter.GetAtPath(TexturesPath + file);
             if (importer == null) throw new FileNotFoundException(TexturesPath + file);
+            if (importer.wrapMode == TextureWrapMode.Repeat && importer.mipmapEnabled && importer.maxTextureSize == MaxTextureSize) continue;
 
-            var isNormal = normals.Contains(file);
-            var type = isNormal ? TextureImporterType.NormalMap : TextureImporterType.Default;
-            if (importer.textureType == type && importer.wrapMode == TextureWrapMode.Repeat && importer.mipmapEnabled) continue;
-
-            importer.textureType = type;
-            importer.sRGBTexture = !isNormal;
+            importer.textureType = TextureImporterType.Default;
+            importer.sRGBTexture = true;
             importer.wrapMode = TextureWrapMode.Repeat;
             importer.mipmapEnabled = true;
+            importer.maxTextureSize = MaxTextureSize; // the albedos are soft colour variation; 256 is plenty
             importer.SaveAndReimport();
         }
     }

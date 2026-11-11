@@ -92,16 +92,18 @@ the level mock-ups and the model sheet, are in `Docs/Art/`.
   uses it. The materials are URP Lit, at `Materials/<Family>/<name>.mat` (Enamel, Wood, Rubber, Foliage, and
   so on). There are 45, and 42 of them are used. Each model's `.fbx.meta` remaps its slots to them by name
   (`externalObjects`).
-- **Surface textures:** each surface has a tileable albedo and a normal map family in `Textures/Surfaces/`,
-  with its `tileMeters`, metallic and roughness listed in the surface JSON. Menu
-  **Harvest Sorter > Apply Surface Materials** (`Scripts/Editor/SurfaceMaterialBuilder.cs`, re-runnable)
-  sets the texture import settings and creates or updates the 45 materials. Each gets its albedo, normal
-  map, metallic and smoothness (1 - roughness), with `_BaseColor` white because the albedo already carries
-  the colour. The builder then rewrites every model's material remaps. Materials are updated in place, so
-  their GUIDs survive. The textures repeat at real-world size because the Blender script rewrites
-  **UV0 ("Surface")** as a box projection in model space, in units of that face's `tileMeters`, so
-  material tiling stays (1, 1). The original palette UVs are kept in **UV1 ("Palette")**;
-  `Textures/HS_Palette.png` is unused.
+- **Surface textures (hyper-casual, minimal):** each surface has a tileable albedo in `Textures/Surfaces/`
+  (imported at max 256 px), listed in the surface JSON with its `tileMeters`. The albedos are only soft
+  variation around the swatch colour. The pack's normal maps and per-surface metallic/roughness are
+  deliberately **not** used: every material is matte (smoothness 0, metallic 0, specular highlights and
+  environment reflections off, no normal map), which keeps the look flat and the shader cheap on mobile.
+  Menu **Harvest Sorter > Apply Surface Materials** (`Scripts/Editor/SurfaceMaterialBuilder.cs`,
+  re-runnable) sets the texture import settings, creates or updates the 45 materials (`_BaseColor` white,
+  because the albedo already carries the colour) and rewrites every model's material remaps. Materials
+  are updated in place, so their GUIDs survive. The textures repeat at real-world size because the Blender
+  script rewrites **UV0 ("Surface")** as a box projection in model space, in units of that face's
+  `tileMeters`, so material tiling stays (1, 1). The original palette UVs are kept in
+  **UV1 ("Palette")**; `Textures/HS_Palette.png` is unused.
 - **New models** need the same treatment: run the Blender script in `convert` mode on them
   (`-- <models_dir> <HS_Swatches.json> <out_dir> convert <HS_Surface_Materials.json>`), copy the FBX files in,
   then run Apply Surface Materials. A slot whose name matches no surface logs a warning and falls back to
