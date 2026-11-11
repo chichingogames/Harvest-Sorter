@@ -88,14 +88,21 @@ the level mock-ups and the model sheet, are in `Docs/Art/`.
   `Tools/Blender/split_palette_materials.py`, which gives each face a material for the palette swatch its
   UVs sat in. A model therefore has one material slot per colour it uses, named `<Model>_<SwatchName>`, for
   example `Market_Truck_Tire`. Each slot is remapped in the model's `.fbx.meta` (`externalObjects`) to a
-  solid-colour URP Lit material at `Materials/<Model>/<Model>_<SwatchName>.mat`, with no texture. There are
-  147 materials in total, and none are shared between models, so editing one never affects another model.
-  Base colour, smoothness (1 - roughness) and metallic come from `Art Data/HS_Swatches.json`.
-  `Textures/HS_Palette.png` is no longer used by any material; the meshes keep their UVs, so it could be
-  reapplied.
-- **New models** need the same treatment: run the Blender script in `convert` mode on them, then create the
-  `.mat` files and `.fbx.meta` remaps. A slot without a remap falls back to the material Unity generates
-  from the FBX.
+  URP Lit material at `Materials/<Model>/<Model>_<SwatchName>.mat`. There are 147 materials in total, and
+  none are shared between models, so editing one never affects another model.
+- **Surface textures:** each swatch has a tileable albedo and a normal map family in
+  `Textures/Surfaces/`, listed in `Art Data/HS_Surface_Materials.json` with its `tileMeters`, metallic and
+  roughness. Menu **Harvest Sorter > Apply Surface Textures** (`Scripts/Editor/SurfaceMaterialBuilder.cs`,
+  re-runnable) sets the import settings (normal maps as Normal Map, Repeat wrap) and gives every material
+  its albedo, normal map, metallic and smoothness (1 - roughness), with `_BaseColor` white because the
+  albedo already carries the swatch colour. It matches a material to a surface by the `<SwatchName>`
+  suffix. The textures repeat at real-world size because the Blender script rewrites **UV0 ("Surface")**
+  as a box projection in model space, in units of that face's `tileMeters`, so material tiling stays
+  (1, 1). The original palette UVs are kept in **UV1 ("Palette")**; `Textures/HS_Palette.png` is unused.
+- **New models** need the same treatment: run the Blender script in `convert` mode on them
+  (`-- <models_dir> <HS_Swatches.json> <out_dir> convert <HS_Surface_Materials.json>`), create the `.mat`
+  files and `.fbx.meta` remaps, then run Apply Surface Textures. A slot without a remap falls back to the
+  material Unity generates from the FBX.
 - **Axes and scale:** the FBX files are exported with Blender's "Apply Transform" and "FBX All" scaling, so
   every model root imports with no rotation, scale 1, real-world metres and Y up. A default Blender export
   gives roots a (90, 0, 0) rotation and ×100 scale; the artist's original files had this. Blender

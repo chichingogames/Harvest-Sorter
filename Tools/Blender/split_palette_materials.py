@@ -1,18 +1,23 @@
 """Blender: split each Harvest Sorter FBX into one material per palette swatch.
 
-blender -b --factory-startup -P split_palette_materials.py -- <models_dir> <swatches.json> <out_dir> <mode: analyze|convert>
+blender -b --factory-startup -P split_palette_materials.py -- <models_dir> <swatches.json> <out_dir> <mode: analyze|convert> <surface_materials.json>
 
 Each face is assigned to the HS_Palette.png swatch cell its UVs sit in, and gets a solid-colour material
 named <Model>_<SwatchName>. "analyze" only writes report_analyze.json; "convert" also writes the split FBX
 files to out_dir. Unity side: one .mat per material in Materials/<Model>/ and an externalObjects remap per
 name in the model's .fbx.meta.
+
+In "convert" mode UV channel 0 is rewritten with a box projection in model space, in units of the face's
+surface tileMeters (HS_Surface_Materials.json), so the tileable surface textures repeat at their real-world
+size with material tiling (1, 1). The palette UVs are kept in channel 1 ("Palette").
 """
 import bpy, json, math, os, sys
 from collections import Counter, defaultdict
 
-models_dir, swatch_json, out_dir, mode = sys.argv[sys.argv.index("--") + 1:]
+models_dir, swatch_json, out_dir, mode, surface_json = sys.argv[sys.argv.index("--") + 1:]
 N = 8
 swatches = json.load(open(swatch_json))
+tile_of = {m["sourceName"]: m["tileMeters"] for m in json.load(open(surface_json))["materials"]}
 cell_to_swatch = {}
 for name, s in swatches.items():
     u, v = s["uv"]
@@ -32,6 +37,29 @@ def cell_of(uv):
     return (min(N - 1, max(0, math.floor(uv[0] * N))), min(N - 1, max(0, math.floor(uv[1] * N))))
 
 
+def box_project(ob, face_swatch):
+    """Copy the palette UVs to a "Palette" layer, then box-project the first layer in tile units."""
+    me = ob.data
+    first = me.uv_layers[0]
+    if "Palette" not in me.uv_layers:
+        pal = me.uv_layers.new(name="Palette")
+        for i, d in enumerate(first.data):
+            pal.data[i].uv = d.uv
+    first.name = "Surface"
+    mw = ob.matrix_world
+    nmat = mw.inverted_safe().transposed().to_3x3()
+    for poly, name in zip(me.polygons, face_swatch):
+        tile = tile_of.get(name, 1.0)
+        n = nmat @ poly.normal
+        ax = max(range(3), key=lambda i: abs(n[i]))
+        flip = -1 if n[ax] < 0 else 1
+        for li in poly.loop_indices:
+            p = mw @ me.vertices[me.loops[li].vertex_index].co
+            # Blender is Z up: X faces use (y, z), Y faces (x, z), Z faces (x, y); flip keeps it unmirrored
+            u, v = ((flip * p.y, p.z), (-flip * p.x, p.z), (flip * p.x, p.y))[ax]
+            first.data[li].uv = (u / tile, v / tile)
+
+
 report = {}
 os.makedirs(out_dir, exist_ok=True)
 for f in sorted(os.listdir(models_dir)):
@@ -43,8 +71,12 @@ for f in sorted(os.listdir(models_dir)):
 
     info = {"faces": 0, "straddle": 0, "unknown": 0, "swatches": Counter(), "objects": {}}
     mats = {}
+    seen = set()
     for ob in [o for o in bpy.context.scene.objects if o.type == "MESH"]:
         me = ob.data
+        if me.name in seen:  # shared mesh data is converted once
+            continue
+        seen.add(me.name)
         uvl = me.uv_layers.active
         face_swatch = []
         for poly in me.polygons:
@@ -84,6 +116,7 @@ for f in sorted(os.listdir(models_dir)):
             slot_of[name] = len(me.materials) - 1
         for poly, name in zip(me.polygons, face_swatch):
             poly.material_index = slot_of[name]
+        box_project(ob, face_swatch)
 
     if mode == "convert":
         # remove the old palette material/images so they are not exported

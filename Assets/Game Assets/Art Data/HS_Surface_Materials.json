@@ -1,0 +1,454 @@
+{
+  "materials": [
+    {
+      "sourceName": "Ivory enamel",
+      "name": "HS_Ivory_enamel",
+      "family": "Enamel",
+      "albedo": "HS_Ivory_enamel_Albedo.png",
+      "normal": "HS_Enamel_Normal.png",
+      "tileMeters": 1.15,
+      "metallic": 0,
+      "roughness": 0.32
+    },
+    {
+      "sourceName": "Brass",
+      "name": "HS_Brass",
+      "family": "Metal",
+      "albedo": "HS_Brass_Albedo.png",
+      "normal": "HS_Metal_Normal.png",
+      "tileMeters": 0.72,
+      "metallic": 0.25,
+      "roughness": 0.34
+    },
+    {
+      "sourceName": "Satin steel",
+      "name": "HS_Satin_steel",
+      "family": "Metal",
+      "albedo": "HS_Satin_steel_Albedo.png",
+      "normal": "HS_Metal_Normal.png",
+      "tileMeters": 0.72,
+      "metallic": 0.2,
+      "roughness": 0.4
+    },
+    {
+      "sourceName": "Market petrol teal",
+      "name": "HS_Market_petrol_teal",
+      "family": "Enamel",
+      "albedo": "HS_Market_petrol_teal_Albedo.png",
+      "normal": "HS_Enamel_Normal.png",
+      "tileMeters": 1.15,
+      "metallic": 0,
+      "roughness": 0.36
+    },
+    {
+      "sourceName": "Truck shadows",
+      "name": "HS_Truck_shadows",
+      "family": "Enamel",
+      "albedo": "HS_Truck_shadows_Albedo.png",
+      "normal": "HS_Enamel_Normal.png",
+      "tileMeters": 1.15,
+      "metallic": 0,
+      "roughness": 0.48
+    },
+    {
+      "sourceName": "Harvester mint",
+      "name": "HS_Harvester_mint",
+      "family": "Enamel",
+      "albedo": "HS_Harvester_mint_Albedo.png",
+      "normal": "HS_Enamel_Normal.png",
+      "tileMeters": 1.15,
+      "metallic": 0,
+      "roughness": 0.4
+    },
+    {
+      "sourceName": "Harvester trim",
+      "name": "HS_Harvester_trim",
+      "family": "Enamel",
+      "albedo": "HS_Harvester_trim_Albedo.png",
+      "normal": "HS_Enamel_Normal.png",
+      "tileMeters": 1.15,
+      "metallic": 0,
+      "roughness": 0.48
+    },
+    {
+      "sourceName": "Belt deep teal",
+      "name": "HS_Belt_deep_teal",
+      "family": "Rubber",
+      "albedo": "HS_Belt_deep_teal_Albedo.png",
+      "normal": "HS_Rubber_Normal.png",
+      "tileMeters": 0.78,
+      "metallic": 0,
+      "roughness": 0.75
+    },
+    {
+      "sourceName": "Belt slat alternate",
+      "name": "HS_Belt_slat_alternate",
+      "family": "Rubber",
+      "albedo": "HS_Belt_slat_alternate_Albedo.png",
+      "normal": "HS_Rubber_Normal.png",
+      "tileMeters": 0.78,
+      "metallic": 0,
+      "roughness": 0.7
+    },
+    {
+      "sourceName": "Belt slat groove",
+      "name": "HS_Belt_slat_groove",
+      "family": "Rubber",
+      "albedo": "HS_Belt_slat_groove_Albedo.png",
+      "normal": "HS_Rubber_Normal.png",
+      "tileMeters": 0.78,
+      "metallic": 0,
+      "roughness": 0.79
+    },
+    {
+      "sourceName": "Belt frame",
+      "name": "HS_Belt_frame",
+      "family": "Enamel",
+      "albedo": "HS_Belt_frame_Albedo.png",
+      "normal": "HS_Enamel_Normal.png",
+      "tileMeters": 1.15,
+      "metallic": 0,
+      "roughness": 0.52
+    },
+    {
+      "sourceName": "Window blue",
+      "name": "HS_Window_blue",
+      "family": "Glass",
+      "albedo": "HS_Window_blue_Albedo.png",
+      "normal": "HS_Glass_Normal.png",
+      "tileMeters": 0.7,
+      "metallic": 0,
+      "roughness": 0.28
+    },
+    {
+      "sourceName": "Window highlight",
+      "name": "HS_Window_highlight",
+      "family": "Glass",
+      "albedo": "HS_Window_highlight_Albedo.png",
+      "normal": "HS_Glass_Normal.png",
+      "tileMeters": 0.7,
+      "metallic": 0,
+      "roughness": 0.33
+    },
+    {
+      "sourceName": "Tire",
+      "name": "HS_Tire",
+      "family": "Rubber",
+      "albedo": "HS_Tire_Albedo.png",
+      "normal": "HS_Rubber_Normal.png",
+      "tileMeters": 0.78,
+      "metallic": 0,
+      "roughness": 0.78
+    },
+    {
+      "sourceName": "Honey oak",
+      "name": "HS_Honey_oak",
+      "family": "Wood",
+      "albedo": "HS_Honey_oak_Albedo.png",
+      "normal": "HS_Wood_Normal.png",
+      "tileMeters": 0.95,
+      "metallic": 0,
+      "roughness": 0.57
+    },
+    {
+      "sourceName": "Oak rim",
+      "name": "HS_Oak_rim",
+      "family": "Wood",
+      "albedo": "HS_Oak_rim_Albedo.png",
+      "normal": "HS_Wood_Normal.png",
+      "tileMeters": 0.95,
+      "metallic": 0,
+      "roughness": 0.52
+    },
+    {
+      "sourceName": "Oak slats",
+      "name": "HS_Oak_slats",
+      "family": "Wood",
+      "albedo": "HS_Oak_slats_Albedo.png",
+      "normal": "HS_Wood_Normal.png",
+      "tileMeters": 0.95,
+      "metallic": 0,
+      "roughness": 0.54
+    },
+    {
+      "sourceName": "Oak slat variation",
+      "name": "HS_Oak_slat_variation",
+      "family": "Wood",
+      "albedo": "HS_Oak_slat_variation_Albedo.png",
+      "normal": "HS_Wood_Normal.png",
+      "tileMeters": 0.95,
+      "metallic": 0,
+      "roughness": 0.55
+    },
+    {
+      "sourceName": "Oak recess",
+      "name": "HS_Oak_recess",
+      "family": "Wood",
+      "albedo": "HS_Oak_recess_Albedo.png",
+      "normal": "HS_Wood_Normal.png",
+      "tileMeters": 0.95,
+      "metallic": 0,
+      "roughness": 0.69
+    },
+    {
+      "sourceName": "Engraved oak",
+      "name": "HS_Engraved_oak",
+      "family": "Wood",
+      "albedo": "HS_Engraved_oak_Albedo.png",
+      "normal": "HS_Wood_Normal.png",
+      "tileMeters": 0.95,
+      "metallic": 0,
+      "roughness": 0.71
+    },
+    {
+      "sourceName": "Crate seal green",
+      "name": "HS_Crate_seal_green",
+      "family": "Enamel",
+      "albedo": "HS_Crate_seal_green_Albedo.png",
+      "normal": "HS_Enamel_Normal.png",
+      "tileMeters": 1.15,
+      "metallic": 0,
+      "roughness": 0.55
+    },
+    {
+      "sourceName": "Corn gold",
+      "name": "HS_Corn_gold",
+      "family": "Produce",
+      "albedo": "HS_Corn_gold_Albedo.png",
+      "normal": "HS_Produce_Normal.png",
+      "tileMeters": 0.45,
+      "metallic": 0,
+      "roughness": 0.37
+    },
+    {
+      "sourceName": "Corn light",
+      "name": "HS_Corn_light",
+      "family": "Produce",
+      "albedo": "HS_Corn_light_Albedo.png",
+      "normal": "HS_Produce_Normal.png",
+      "tileMeters": 0.45,
+      "metallic": 0,
+      "roughness": 0.38
+    },
+    {
+      "sourceName": "Corn amber",
+      "name": "HS_Corn_amber",
+      "family": "Produce",
+      "albedo": "HS_Corn_amber_Albedo.png",
+      "normal": "HS_Produce_Normal.png",
+      "tileMeters": 0.45,
+      "metallic": 0,
+      "roughness": 0.43
+    },
+    {
+      "sourceName": "Pepper red",
+      "name": "HS_Pepper_red",
+      "family": "Produce",
+      "albedo": "HS_Pepper_red_Albedo.png",
+      "normal": "HS_Produce_Normal.png",
+      "tileMeters": 0.45,
+      "metallic": 0,
+      "roughness": 0.33
+    },
+    {
+      "sourceName": "Pepper light",
+      "name": "HS_Pepper_light",
+      "family": "Produce",
+      "albedo": "HS_Pepper_light_Albedo.png",
+      "normal": "HS_Produce_Normal.png",
+      "tileMeters": 0.45,
+      "metallic": 0,
+      "roughness": 0.34
+    },
+    {
+      "sourceName": "Pepper shadow",
+      "name": "HS_Pepper_shadow",
+      "family": "Produce",
+      "albedo": "HS_Pepper_shadow_Albedo.png",
+      "normal": "HS_Produce_Normal.png",
+      "tileMeters": 0.45,
+      "metallic": 0,
+      "roughness": 0.39
+    },
+    {
+      "sourceName": "Leaf green",
+      "name": "HS_Leaf_green",
+      "family": "Foliage",
+      "albedo": "HS_Leaf_green_Albedo.png",
+      "normal": "HS_Foliage_Normal.png",
+      "tileMeters": 0.47,
+      "metallic": 0,
+      "roughness": 0.54
+    },
+    {
+      "sourceName": "Leaf highlight",
+      "name": "HS_Leaf_highlight",
+      "family": "Foliage",
+      "albedo": "HS_Leaf_highlight_Albedo.png",
+      "normal": "HS_Foliage_Normal.png",
+      "tileMeters": 0.47,
+      "metallic": 0,
+      "roughness": 0.49
+    },
+    {
+      "sourceName": "Leaf dark",
+      "name": "HS_Leaf_dark",
+      "family": "Foliage",
+      "albedo": "HS_Leaf_dark_Albedo.png",
+      "normal": "HS_Foliage_Normal.png",
+      "tileMeters": 0.47,
+      "metallic": 0,
+      "roughness": 0.53
+    },
+    {
+      "sourceName": "Field soil",
+      "name": "HS_Field_soil",
+      "family": "Soil",
+      "albedo": "HS_Field_soil_Albedo.png",
+      "normal": "HS_Soil_Normal.png",
+      "tileMeters": 0.86,
+      "metallic": 0,
+      "roughness": 0.82
+    },
+    {
+      "sourceName": "Field soil shade",
+      "name": "HS_Field_soil_shade",
+      "family": "Soil",
+      "albedo": "HS_Field_soil_shade_Albedo.png",
+      "normal": "HS_Soil_Normal.png",
+      "tileMeters": 0.86,
+      "metallic": 0,
+      "roughness": 0.87
+    },
+    {
+      "sourceName": "Field clod",
+      "name": "HS_Field_clod",
+      "family": "Soil",
+      "albedo": "HS_Field_clod_Albedo.png",
+      "normal": "HS_Soil_Normal.png",
+      "tileMeters": 0.86,
+      "metallic": 0,
+      "roughness": 0.84
+    },
+    {
+      "sourceName": "Cut stalk gold",
+      "name": "HS_Cut_stalk_gold",
+      "family": "Foliage",
+      "albedo": "HS_Cut_stalk_gold_Albedo.png",
+      "normal": "HS_Foliage_Normal.png",
+      "tileMeters": 0.47,
+      "metallic": 0,
+      "roughness": 0.66
+    },
+    {
+      "sourceName": "Cut stem top",
+      "name": "HS_Cut_stem_top",
+      "family": "Foliage",
+      "albedo": "HS_Cut_stem_top_Albedo.png",
+      "normal": "HS_Foliage_Normal.png",
+      "tileMeters": 0.47,
+      "metallic": 0,
+      "roughness": 0.63
+    },
+    {
+      "sourceName": "Warm sand",
+      "name": "HS_Warm_sand",
+      "family": "Yard",
+      "albedo": "HS_Warm_sand_Albedo.png",
+      "normal": "HS_Yard_Normal.png",
+      "tileMeters": 2.55,
+      "metallic": 0,
+      "roughness": 0.91
+    },
+    {
+      "sourceName": "Warm sand variation",
+      "name": "HS_Warm_sand_variation",
+      "family": "Yard",
+      "albedo": "HS_Warm_sand_variation_Albedo.png",
+      "normal": "HS_Yard_Normal.png",
+      "tileMeters": 2.55,
+      "metallic": 0,
+      "roughness": 0.93
+    },
+    {
+      "sourceName": "Foliage muted green",
+      "name": "HS_Foliage_muted_green",
+      "family": "Foliage",
+      "albedo": "HS_Foliage_muted_green_Albedo.png",
+      "normal": "HS_Foliage_Normal.png",
+      "tileMeters": 0.47,
+      "metallic": 0,
+      "roughness": 0.72
+    },
+    {
+      "sourceName": "Foliage shadow",
+      "name": "HS_Foliage_shadow",
+      "family": "Foliage",
+      "albedo": "HS_Foliage_shadow_Albedo.png",
+      "normal": "HS_Foliage_Normal.png",
+      "tileMeters": 0.47,
+      "metallic": 0,
+      "roughness": 0.79
+    },
+    {
+      "sourceName": "Foliage edge",
+      "name": "HS_Foliage_edge",
+      "family": "Foliage",
+      "albedo": "HS_Foliage_edge_Albedo.png",
+      "normal": "HS_Foliage_Normal.png",
+      "tileMeters": 0.47,
+      "metallic": 0,
+      "roughness": 0.73
+    },
+    {
+      "sourceName": "Barn muted red",
+      "name": "HS_Barn_muted_red",
+      "family": "Wood",
+      "albedo": "HS_Barn_muted_red_Albedo.png",
+      "normal": "HS_Wood_Normal.png",
+      "tileMeters": 0.95,
+      "metallic": 0,
+      "roughness": 0.69
+    },
+    {
+      "sourceName": "Barn plank shade",
+      "name": "HS_Barn_plank_shade",
+      "family": "Wood",
+      "albedo": "HS_Barn_plank_shade_Albedo.png",
+      "normal": "HS_Wood_Normal.png",
+      "tileMeters": 0.95,
+      "metallic": 0,
+      "roughness": 0.72
+    },
+    {
+      "sourceName": "Barn slate roof",
+      "name": "HS_Barn_slate_roof",
+      "family": "Slate",
+      "albedo": "HS_Barn_slate_roof_Albedo.png",
+      "normal": "HS_Slate_Normal.png",
+      "tileMeters": 1.0,
+      "metallic": 0,
+      "roughness": 0.75
+    },
+    {
+      "sourceName": "Covered crop cloth",
+      "name": "HS_Covered_crop_cloth",
+      "family": "Fabric",
+      "albedo": "HS_Covered_crop_cloth_Albedo.png",
+      "normal": "HS_Fabric_Normal.png",
+      "tileMeters": 0.58,
+      "metallic": 0,
+      "roughness": 0.8
+    },
+    {
+      "sourceName": "Warm white flower",
+      "name": "HS_Warm_white_flower",
+      "family": "Foliage",
+      "albedo": "HS_Warm_white_flower_Albedo.png",
+      "normal": "HS_Foliage_Normal.png",
+      "tileMeters": 0.47,
+      "metallic": 0,
+      "roughness": 0.72
+    }
+  ]
+}
