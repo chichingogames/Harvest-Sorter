@@ -69,13 +69,19 @@ rough compile check. `Library/`, `Temp/`, `Logs/`, `UserSettings/` are Unity cac
 The art was exported from Blender (the source `.blend` isn't in the repo). Reference renders, including
 the level mock-ups and the model sheet, are in `Docs/Art/`.
 
-- **Materials:** every FBX in `Game Assets/Models/` has a single material slot, `HS_Palette`. Each model's
-  `.meta` remaps that slot to its own URP Lit material at `Materials/<Model>/<Model>.mat`. All 33 of those
-  are independent copies that start with the same settings. Colors come from the UVs pointing into swatches
-  on `Textures/HS_Palette.png`, which every material shares, so editing the texture recolors all models. That
-  texture is uncompressed with no mipmaps; keep it that way or the swatches bleed into each other. A model
-  imported later needs its own material folder and remap set by hand. Swatch names and hex values are in
-  `Art Data/HS_Swatches.json`.
+- **Materials (one per colour, per model):** the pack originally coloured everything through one palette
+  texture. The FBX files in `Game Assets/Models/` have since been re-exported with
+  `Tools/Blender/split_palette_materials.py`, which gives each face a material for the palette swatch its
+  UVs sat in. A model therefore has one material slot per colour it uses, named `<Model>_<SwatchName>`, for
+  example `Market_Truck_Tire`. Each slot is remapped in the model's `.fbx.meta` (`externalObjects`) to a
+  solid-colour URP Lit material at `Materials/<Model>/<Model>_<SwatchName>.mat`, with no texture. There are
+  147 materials in total, and none are shared between models, so editing one never affects another model.
+  Base colour, smoothness (1 - roughness) and metallic come from `Art Data/HS_Swatches.json`.
+  `Textures/HS_Palette.png` is no longer used by any material; the meshes keep their UVs, so it could be
+  reapplied.
+- **New models** need the same treatment: run the Blender script in `convert` mode on them, then create the
+  `.mat` files and `.fbx.meta` remaps. A slot without a remap falls back to the material Unity generates
+  from the FBX.
 - **Axes:** the models are imported with `bakeAxisConversion` on, so their roots have no rotation. The Blender
   data in `Art Data/` uses Z-up, so convert those coordinates before using them in Unity.
 - **Anchor nodes:** models contain gameplay anchor transforms as named child nodes, for example `Entry`/`Exit`/`Port`

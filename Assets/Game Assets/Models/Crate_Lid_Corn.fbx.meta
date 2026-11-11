@@ -7,8 +7,38 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: ddd32b6632964766affac3514f4bb5d4, type: 2}
+      name: Crate_Lid_Corn_Brass
+    second: {fileID: 2100000, guid: 3acf1766cb974d82b2d4b569d3642922, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crate_Lid_Corn_CrateSealGreen
+    second: {fileID: 2100000, guid: 0acd4e0be3b24770bbd21f9799f996d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crate_Lid_Corn_EngravedOak
+    second: {fileID: 2100000, guid: 9b41acd0e55644a6900bb93d9890d3c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crate_Lid_Corn_IvoryEnamel
+    second: {fileID: 2100000, guid: 1b18fdea44554019bd1fd884d3021c29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crate_Lid_Corn_OakRim
+    second: {fileID: 2100000, guid: 585df6df2e404edc90c81301c2e6c4c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crate_Lid_Corn_OakSlatVariation
+    second: {fileID: 2100000, guid: 940d5697c4d2417394ae083023d89a49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crate_Lid_Corn_OakSlats
+    second: {fileID: 2100000, guid: ce0dd7556a374113848382c12af346cc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

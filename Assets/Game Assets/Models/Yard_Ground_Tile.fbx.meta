@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: 23a5b03cd21248d4a3f85898b96edd91, type: 2}
+      name: Yard_Ground_Tile_WarmSand
+    second: {fileID: 2100000, guid: 1cb5dc7b5afb49ceaebaeb9b7527cd2a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

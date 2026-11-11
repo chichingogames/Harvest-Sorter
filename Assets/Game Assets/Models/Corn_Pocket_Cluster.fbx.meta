@@ -7,8 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: 8e6db24135ac4f34a75666ad8be25e02, type: 2}
+      name: Corn_Pocket_Cluster_CornGold
+    second: {fileID: 2100000, guid: 17b0514bf2aa4663826f13fe616ddffa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Corn_Pocket_Cluster_LeafGreen
+    second: {fileID: 2100000, guid: 14ab50cf6b1e42d49f592467f4e3e517, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Corn_Pocket_Cluster_LeafHighlight
+    second: {fileID: 2100000, guid: c13ed6902faf4637b51af8bf5e8904c9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

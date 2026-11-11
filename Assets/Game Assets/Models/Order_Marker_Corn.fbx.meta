@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: 23a225ef4e8c4666b02f69683bfaf59f, type: 2}
+      name: Order_Marker_Corn_EngravedOak
+    second: {fileID: 2100000, guid: 4dd4c6e88471476f965e245a49a0d32f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -7,8 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: 6d6438a25d51492c8f70a058eaf56fa2, type: 2}
+      name: Tray_Side_Intake_OakRim
+    second: {fileID: 2100000, guid: ca63eef937ac43c8861e39fb024dfdd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tray_Side_Intake_OakSlatVariation
+    second: {fileID: 2100000, guid: 0c1e955da08643d6831a1d7fe38f174f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tray_Side_Intake_OakSlats
+    second: {fileID: 2100000, guid: b5bab22e63bf4392ad93f87e1a5afebf, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

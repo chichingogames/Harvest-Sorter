@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: f330da8c0ed24a1580fae592910e225c, type: 2}
+      name: Field_Cut_Stubble_CutStalkGold
+    second: {fileID: 2100000, guid: 9c0d89c9f4164736aad8327f4c124d32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Field_Cut_Stubble_CutStemTop
+    second: {fileID: 2100000, guid: f77d9e58a6f14e6987eed3f90e64044a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

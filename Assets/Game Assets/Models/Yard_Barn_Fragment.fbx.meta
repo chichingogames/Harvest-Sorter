@@ -7,8 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: 6f045a2f12014e7bab71f755e4984fd8, type: 2}
+      name: Yard_Barn_Fragment_BarnMutedRed
+    second: {fileID: 2100000, guid: 09563f403c37431eb53a16cfca9f102b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Yard_Barn_Fragment_BarnPlankShade
+    second: {fileID: 2100000, guid: d71ba20b457a4d95aa564584db95579a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Yard_Barn_Fragment_BarnSlateRoof
+    second: {fileID: 2100000, guid: 464a4aae0805472ab40a571ea79a3479, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Yard_Barn_Fragment_IvoryEnamel
+    second: {fileID: 2100000, guid: bace217b70e54f6baacbd1268f96a291, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

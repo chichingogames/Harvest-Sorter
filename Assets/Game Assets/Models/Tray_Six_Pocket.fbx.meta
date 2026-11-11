@@ -7,8 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: ed94b95dbae046b1bc27bdc9f34c7789, type: 2}
+      name: Tray_Six_Pocket_Brass
+    second: {fileID: 2100000, guid: 74e6fefe1df84b2b9dcb375cc3ee6d27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tray_Six_Pocket_HoneyOak
+    second: {fileID: 2100000, guid: 586d95ebd76e4973aabef947753e927f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tray_Six_Pocket_OakRecess
+    second: {fileID: 2100000, guid: 3253af9cf1174f7f901a115ac5a0fbbb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tray_Six_Pocket_OakRim
+    second: {fileID: 2100000, guid: 05ab66c0215c4410b9a6437e1dca0fbc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tray_Six_Pocket_OakSlats
+    second: {fileID: 2100000, guid: ddf40b0a02a0433cb9f6b3f33c18c5dd, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

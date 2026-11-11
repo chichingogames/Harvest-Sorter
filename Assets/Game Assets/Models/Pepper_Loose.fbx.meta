@@ -7,8 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: c85b5b32348f4b768a1fd01c97d51809, type: 2}
+      name: Pepper_Loose_LeafDark
+    second: {fileID: 2100000, guid: 1b5664669c61474bae4dc5296a04d6ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pepper_Loose_LeafGreen
+    second: {fileID: 2100000, guid: 5fe73e48977d464d915cd1c354575543, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pepper_Loose_PepperLight
+    second: {fileID: 2100000, guid: 3aa19c68954842199c22068a5f57e9da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pepper_Loose_PepperRed
+    second: {fileID: 2100000, guid: 591f04681f894e0093fb54e6991bdde1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pepper_Loose_PepperShadow
+    second: {fileID: 2100000, guid: 0aa74cf31f3e40dca9ae291d0389572b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

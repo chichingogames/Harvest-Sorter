@@ -7,8 +7,58 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: 5ecb1776323541f19d820b988f279061, type: 2}
+      name: Market_Truck_Single_HoneyOak
+    second: {fileID: 2100000, guid: 27da93dc839844cc9406f4fa0524b690, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Market_Truck_Single_IvoryEnamel
+    second: {fileID: 2100000, guid: a07d6b5b0aa14486a13dc67e2b8c1169, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Market_Truck_Single_MarketPetrolTeal
+    second: {fileID: 2100000, guid: 09014c26cdf24453b8f87083bd7cabb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Market_Truck_Single_OakRim
+    second: {fileID: 2100000, guid: ab1c4192badf4be5ada80972eaa8d0fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Market_Truck_Single_OakSlatVariation
+    second: {fileID: 2100000, guid: 35081034bd02437c8f5d176cbe49fc65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Market_Truck_Single_OakSlats
+    second: {fileID: 2100000, guid: b8b5ebf700514d2a9908455ff4caf3a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Market_Truck_Single_SatinSteel
+    second: {fileID: 2100000, guid: 03eefb0bf1ea4a2d94341df3403483a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Market_Truck_Single_Tire
+    second: {fileID: 2100000, guid: ba4243ba8d5b4d79ba1bae01d85d4508, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Market_Truck_Single_TruckShadows
+    second: {fileID: 2100000, guid: ee1d3212f0bb4c98aebdf5c6daaef9e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Market_Truck_Single_WindowBlue
+    second: {fileID: 2100000, guid: e58911ae222c46faa8843f6de90fc425, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Market_Truck_Single_WindowHighlight
+    second: {fileID: 2100000, guid: 7684d658f24b4940971a70efa7d615ba, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -7,8 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: 545dc2039fae43e4b98077a7a9db481b, type: 2}
+      name: Belt_Raised_Crossing_BeltDeepTeal
+    second: {fileID: 2100000, guid: 55af50e5c7fd4ff9bc7290551521b362, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt_Raised_Crossing_BeltFrame
+    second: {fileID: 2100000, guid: 2e12e4a8f8b24d4e8b70879ac5c3d3f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt_Raised_Crossing_BeltSlatAlternate
+    second: {fileID: 2100000, guid: e58deec7dcd54f6ca351d3a39ddb77b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt_Raised_Crossing_IvoryEnamel
+    second: {fileID: 2100000, guid: a16a53e39bef4f55a1a428245053067f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt_Raised_Crossing_MarketPetrolTeal
+    second: {fileID: 2100000, guid: 36a7580e01d04990bda4e3d435986d3c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -7,8 +7,38 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: 2baa401733db4f0c9f6cae4d543b6b87, type: 2}
+      name: Mint_Harvester_Brass
+    second: {fileID: 2100000, guid: 9e51aed3666b41359593619ac759685c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mint_Harvester_HarvesterMint
+    second: {fileID: 2100000, guid: cc1a577274664fb5bd2ff1ea7ca1a631, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mint_Harvester_HarvesterTrim
+    second: {fileID: 2100000, guid: 2c2946f138cc4a2c9d135396381ec811, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mint_Harvester_IvoryEnamel
+    second: {fileID: 2100000, guid: 29d4df5657574915bdf1211a73355232, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mint_Harvester_MarketPetrolTeal
+    second: {fileID: 2100000, guid: 6496a8a9828849268cb6978d6b472c16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mint_Harvester_SatinSteel
+    second: {fileID: 2100000, guid: 0233cbe3c2874d959c0564205ff0956c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mint_Harvester_Tire
+    second: {fileID: 2100000, guid: 5563863093ec4a12b9778e046d2c3a24, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

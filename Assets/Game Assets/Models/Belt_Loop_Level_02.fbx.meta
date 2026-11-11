@@ -7,8 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: c20df2b1a11e45c8bb89684b6e4afd3d, type: 2}
+      name: Belt_Loop_Level_02_BeltDeepTeal
+    second: {fileID: 2100000, guid: afa55cbaa9264c528522859bbed2f146, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt_Loop_Level_02_BeltFrame
+    second: {fileID: 2100000, guid: 055cacc0efb44c40b8b62a15fd1838c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt_Loop_Level_02_BeltSlatAlternate
+    second: {fileID: 2100000, guid: c975bd1f33af4888951aa4da76efa3a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt_Loop_Level_02_IvoryEnamel
+    second: {fileID: 2100000, guid: 495264bc836149d7b53ad83baf7e0510, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

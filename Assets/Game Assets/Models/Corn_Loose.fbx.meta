@@ -7,8 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: 58b4115469374309a4bf3597c2cc7b8a, type: 2}
+      name: Corn_Loose_CornAmber
+    second: {fileID: 2100000, guid: 4923cf4fd553406f90d4b8e494899dae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Corn_Loose_CornGold
+    second: {fileID: 2100000, guid: 6aff6f43827b4bd79a3fb7a9546b28ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Corn_Loose_CornLight
+    second: {fileID: 2100000, guid: baaa597c23ab449996ec758485be1632, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Corn_Loose_LeafGreen
+    second: {fileID: 2100000, guid: 335e1010f5a84b14bf98cda380b63a35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Corn_Loose_LeafHighlight
+    second: {fileID: 2100000, guid: 20a19ec93c1e4da4aff58efdba88b226, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

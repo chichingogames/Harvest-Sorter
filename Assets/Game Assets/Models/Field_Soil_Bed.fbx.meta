@@ -7,8 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: b1d5a8500ec44ee8a4eaaa8230cc466d, type: 2}
+      name: Field_Soil_Bed_FieldClod
+    second: {fileID: 2100000, guid: 4a73870c0cc248d08b65db90ad7665ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Field_Soil_Bed_FieldSoil
+    second: {fileID: 2100000, guid: a462fbccb3e14de9b7c7cfc5ab63fc19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Field_Soil_Bed_FieldSoilShade
+    second: {fileID: 2100000, guid: 1c785ba143e7496c90f221d76f8a110b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -7,8 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: 34075c6b5ae240d19fe86b53df6d19e4, type: 2}
+      name: Belt_SidePort_Left_BeltDeepTeal
+    second: {fileID: 2100000, guid: 0f7683327a2c42729b2ed7cc6840ee02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt_SidePort_Left_BeltFrame
+    second: {fileID: 2100000, guid: f9e0acbd9ce4425cb3a7034d953b771d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt_SidePort_Left_BeltSlatAlternate
+    second: {fileID: 2100000, guid: 4e7bb565792842d5bd5ab90532757945, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt_SidePort_Left_IvoryEnamel
+    second: {fileID: 2100000, guid: d560799f9da04eb2b21db5bf839a77d7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

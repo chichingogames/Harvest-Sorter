@@ -7,8 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HS_Palette
-    second: {fileID: 2100000, guid: b74dbb92d01442798c7f9efe6516fca2, type: 2}
+      name: Pepper_Pocket_Cluster_LeafDark
+    second: {fileID: 2100000, guid: 84821b31ab1b4a759e02ca5f8d3cf138, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pepper_Pocket_Cluster_LeafGreen
+    second: {fileID: 2100000, guid: 623fdd9b9971432ea412d80ee0a9d5fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pepper_Pocket_Cluster_PepperLight
+    second: {fileID: 2100000, guid: 831ed7c3c52c43e3850f3ef871215049, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pepper_Pocket_Cluster_PepperRed
+    second: {fileID: 2100000, guid: 7bc9407760cf4593b057d3e7dc287870, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pepper_Pocket_Cluster_PepperShadow
+    second: {fileID: 2100000, guid: 27f4c5f1b2304e79b33e30946c6724a2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
