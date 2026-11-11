@@ -70,10 +70,12 @@ The art was exported from Blender (the source `.blend` isn't in the repo). Refer
 the level mock-ups and the model sheet, are in `Docs/Art/`.
 
 - **Materials:** every FBX in `Game Assets/Models/` has a single material slot, `HS_Palette`. Each model's
-  `.meta` remaps that slot to the shared URP Lit material `Materials/HS_Palette.mat`. Colors come from the
-  UVs pointing into swatches on `Textures/HS_Palette.png`. That texture is uncompressed with no mipmaps;
-  keep it that way or the swatches bleed into each other. To recolor something, edit the palette rather than
-  adding materials. Swatch names and hex values are in `Art Data/HS_Swatches.json`.
+  `.meta` remaps that slot to its own URP Lit material at `Materials/<Model>/<Model>.mat`. All 33 of those
+  are independent copies that start with the same settings. Colors come from the UVs pointing into swatches
+  on `Textures/HS_Palette.png`, which every material shares, so editing the texture recolors all models. That
+  texture is uncompressed with no mipmaps; keep it that way or the swatches bleed into each other. A model
+  imported later needs its own material folder and remap set by hand. Swatch names and hex values are in
+  `Art Data/HS_Swatches.json`.
 - **Axes:** the models are imported with `bakeAxisConversion` on, so their roots have no rotation. The Blender
   data in `Art Data/` uses Z-up, so convert those coordinates before using them in Unity.
 - **Anchor nodes:** models contain gameplay anchor transforms as named child nodes, for example `Entry`/`Exit`/`Port`
