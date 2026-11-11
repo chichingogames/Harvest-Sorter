@@ -1,0 +1,282 @@
+[
+  {
+    "asset": "Belt_Straight_2m",
+    "renderMeshes": 3,
+    "triangles": 1728,
+    "anchors": [
+      "Entry",
+      "Exit"
+    ],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Belt_Corner_90_Left",
+    "renderMeshes": 3,
+    "triangles": 3288,
+    "anchors": [
+      "Entry",
+      "Exit"
+    ],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Belt_SidePort_Left",
+    "renderMeshes": 3,
+    "triangles": 2052,
+    "anchors": [
+      "Entry",
+      "Exit",
+      "Port"
+    ],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Belt_SidePort_Right",
+    "renderMeshes": 3,
+    "triangles": 2052,
+    "anchors": [
+      "Entry",
+      "Exit",
+      "Port"
+    ],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Belt_Return_Tunnel",
+    "renderMeshes": 3,
+    "triangles": 1512,
+    "anchors": [
+      "VisibleEntry",
+      "ReturnEnd"
+    ],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Belt_Raised_Crossing",
+    "renderMeshes": 3,
+    "triangles": 8016,
+    "anchors": [
+      "LowerA",
+      "LowerB",
+      "UpperA",
+      "UpperB",
+      "UpperCenter"
+    ],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Belt_Direction_Chevrons",
+    "renderMeshes": 1,
+    "triangles": 432,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Tray_Six_Pocket",
+    "renderMeshes": 1,
+    "triangles": 2164,
+    "anchors": [
+      "LidSeat",
+      "Pocket_1",
+      "Pocket_2",
+      "Pocket_3",
+      "Pocket_4",
+      "Pocket_5",
+      "Pocket_6"
+    ],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Tray_Side_Intake",
+    "renderMeshes": 1,
+    "triangles": 648,
+    "anchors": [
+      "BeltSeam",
+      "TrayEdge"
+    ],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Crate_Lid_Corn",
+    "renderMeshes": 1,
+    "triangles": 2256,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Crate_Lid_Pepper",
+    "renderMeshes": 1,
+    "triangles": 2460,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Covered_Crop_Insert",
+    "renderMeshes": 1,
+    "triangles": 436,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Corn_Loose",
+    "renderMeshes": 1,
+    "triangles": 1192,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Pepper_Loose",
+    "renderMeshes": 1,
+    "triangles": 536,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Corn_Planted",
+    "renderMeshes": 1,
+    "triangles": 840,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Pepper_Planted",
+    "renderMeshes": 1,
+    "triangles": 724,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Corn_Planted_Patch",
+    "renderMeshes": 1,
+    "triangles": 12600,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Pepper_Planted_Patch",
+    "renderMeshes": 1,
+    "triangles": 10860,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Corn_Pocket_Cluster",
+    "renderMeshes": 1,
+    "triangles": 1640,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Pepper_Pocket_Cluster",
+    "renderMeshes": 1,
+    "triangles": 2280,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Field_Cut_Stubble",
+    "renderMeshes": 1,
+    "triangles": 840,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Field_Soil_Bed",
+    "renderMeshes": 1,
+    "triangles": 2124,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Mint_Harvester",
+    "renderMeshes": 3,
+    "triangles": 1992,
+    "anchors": [
+      "DrumPivot",
+      "CropExit"
+    ],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Market_Truck",
+    "renderMeshes": 2,
+    "triangles": 4760,
+    "anchors": [
+      "OrderSlot_1",
+      "OrderSlot_2"
+    ],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Market_Truck_Single",
+    "renderMeshes": 2,
+    "triangles": 4652,
+    "anchors": [
+      "OrderSlot_1"
+    ],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Order_Marker_Corn",
+    "renderMeshes": 1,
+    "triangles": 192,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Order_Marker_Pepper",
+    "renderMeshes": 1,
+    "triangles": 396,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Yard_Ground_Tile",
+    "renderMeshes": 1,
+    "triangles": 108,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Yard_Leaf_Cluster",
+    "renderMeshes": 1,
+    "triangles": 1178,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Yard_Fence_Segment",
+    "renderMeshes": 1,
+    "triangles": 648,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Yard_Barn_Fragment",
+    "renderMeshes": 1,
+    "triangles": 3132,
+    "anchors": [],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Belt_Loop_Level_01",
+    "renderMeshes": 3,
+    "triangles": 21132,
+    "anchors": [
+      "Tray_Port_A",
+      "Harvest_Entry"
+    ],
+    "result": "Blender FBX round-trip passed"
+  },
+  {
+    "asset": "Belt_Loop_Level_02",
+    "renderMeshes": 3,
+    "triangles": 21720,
+    "anchors": [
+      "Tray_Port_A",
+      "Tray_Port_B",
+      "Harvest_Entry"
+    ],
+    "result": "Blender FBX round-trip passed"
+  }
+]

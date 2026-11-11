@@ -1,0 +1,407 @@
+{
+  "Ivory enamel": {
+    "hex": "#E9D5AE",
+    "roughness": 0.32,
+    "metallic": 0,
+    "uv": [
+      0.0625,
+      0.9375
+    ]
+  },
+  "Brass": {
+    "hex": "#C59045",
+    "roughness": 0.34,
+    "metallic": 0.25,
+    "uv": [
+      0.1875,
+      0.9375
+    ]
+  },
+  "Satin steel": {
+    "hex": "#B5AB8E",
+    "roughness": 0.4,
+    "metallic": 0.2,
+    "uv": [
+      0.3125,
+      0.9375
+    ]
+  },
+  "Market petrol teal": {
+    "hex": "#39756F",
+    "roughness": 0.36,
+    "metallic": 0,
+    "uv": [
+      0.4375,
+      0.9375
+    ]
+  },
+  "Truck shadows": {
+    "hex": "#285552",
+    "roughness": 0.48,
+    "metallic": 0,
+    "uv": [
+      0.5625,
+      0.9375
+    ]
+  },
+  "Harvester mint": {
+    "hex": "#73B7A1",
+    "roughness": 0.4,
+    "metallic": 0,
+    "uv": [
+      0.6875,
+      0.9375
+    ]
+  },
+  "Harvester trim": {
+    "hex": "#45836E",
+    "roughness": 0.48,
+    "metallic": 0,
+    "uv": [
+      0.8125,
+      0.9375
+    ]
+  },
+  "Belt deep teal": {
+    "hex": "#264846",
+    "roughness": 0.75,
+    "metallic": 0,
+    "uv": [
+      0.9375,
+      0.9375
+    ]
+  },
+  "Belt slat alternate": {
+    "hex": "#2B504D",
+    "roughness": 0.7,
+    "metallic": 0,
+    "uv": [
+      0.0625,
+      0.8125
+    ]
+  },
+  "Belt slat groove": {
+    "hex": "#1D3738",
+    "roughness": 0.79,
+    "metallic": 0,
+    "uv": [
+      0.1875,
+      0.8125
+    ]
+  },
+  "Belt frame": {
+    "hex": "#355955",
+    "roughness": 0.52,
+    "metallic": 0,
+    "uv": [
+      0.3125,
+      0.8125
+    ]
+  },
+  "Window blue": {
+    "hex": "#35515A",
+    "roughness": 0.28,
+    "metallic": 0,
+    "uv": [
+      0.4375,
+      0.8125
+    ]
+  },
+  "Window highlight": {
+    "hex": "#688488",
+    "roughness": 0.33,
+    "metallic": 0,
+    "uv": [
+      0.5625,
+      0.8125
+    ]
+  },
+  "Tire": {
+    "hex": "#292E2A",
+    "roughness": 0.78,
+    "metallic": 0,
+    "uv": [
+      0.6875,
+      0.8125
+    ]
+  },
+  "Honey oak": {
+    "hex": "#B77232",
+    "roughness": 0.57,
+    "metallic": 0,
+    "uv": [
+      0.8125,
+      0.8125
+    ]
+  },
+  "Oak rim": {
+    "hex": "#E4A95F",
+    "roughness": 0.52,
+    "metallic": 0,
+    "uv": [
+      0.9375,
+      0.8125
+    ]
+  },
+  "Oak slats": {
+    "hex": "#D58A3E",
+    "roughness": 0.54,
+    "metallic": 0,
+    "uv": [
+      0.0625,
+      0.6875
+    ]
+  },
+  "Oak slat variation": {
+    "hex": "#C47D38",
+    "roughness": 0.55,
+    "metallic": 0,
+    "uv": [
+      0.1875,
+      0.6875
+    ]
+  },
+  "Oak recess": {
+    "hex": "#794927",
+    "roughness": 0.69,
+    "metallic": 0,
+    "uv": [
+      0.3125,
+      0.6875
+    ]
+  },
+  "Engraved oak": {
+    "hex": "#663F26",
+    "roughness": 0.71,
+    "metallic": 0,
+    "uv": [
+      0.4375,
+      0.6875
+    ]
+  },
+  "Crate seal green": {
+    "hex": "#397350",
+    "roughness": 0.55,
+    "metallic": 0,
+    "uv": [
+      0.5625,
+      0.6875
+    ]
+  },
+  "Corn gold": {
+    "hex": "#F8B92C",
+    "roughness": 0.37,
+    "metallic": 0,
+    "uv": [
+      0.6875,
+      0.6875
+    ]
+  },
+  "Corn light": {
+    "hex": "#FFD552",
+    "roughness": 0.38,
+    "metallic": 0,
+    "uv": [
+      0.8125,
+      0.6875
+    ]
+  },
+  "Corn amber": {
+    "hex": "#E89924",
+    "roughness": 0.43,
+    "metallic": 0,
+    "uv": [
+      0.9375,
+      0.6875
+    ]
+  },
+  "Pepper red": {
+    "hex": "#D93B2A",
+    "roughness": 0.33,
+    "metallic": 0,
+    "uv": [
+      0.0625,
+      0.5625
+    ]
+  },
+  "Pepper light": {
+    "hex": "#EB5137",
+    "roughness": 0.34,
+    "metallic": 0,
+    "uv": [
+      0.1875,
+      0.5625
+    ]
+  },
+  "Pepper shadow": {
+    "hex": "#B72E25",
+    "roughness": 0.39,
+    "metallic": 0,
+    "uv": [
+      0.3125,
+      0.5625
+    ]
+  },
+  "Leaf green": {
+    "hex": "#5A923A",
+    "roughness": 0.54,
+    "metallic": 0,
+    "uv": [
+      0.4375,
+      0.5625
+    ]
+  },
+  "Leaf highlight": {
+    "hex": "#88B345",
+    "roughness": 0.49,
+    "metallic": 0,
+    "uv": [
+      0.5625,
+      0.5625
+    ]
+  },
+  "Leaf dark": {
+    "hex": "#417132",
+    "roughness": 0.53,
+    "metallic": 0,
+    "uv": [
+      0.6875,
+      0.5625
+    ]
+  },
+  "Field soil": {
+    "hex": "#845837",
+    "roughness": 0.82,
+    "metallic": 0,
+    "uv": [
+      0.8125,
+      0.5625
+    ]
+  },
+  "Field soil shade": {
+    "hex": "#6C472F",
+    "roughness": 0.87,
+    "metallic": 0,
+    "uv": [
+      0.9375,
+      0.5625
+    ]
+  },
+  "Field clod": {
+    "hex": "#9E6F47",
+    "roughness": 0.84,
+    "metallic": 0,
+    "uv": [
+      0.0625,
+      0.4375
+    ]
+  },
+  "Cut stalk gold": {
+    "hex": "#C18F49",
+    "roughness": 0.66,
+    "metallic": 0,
+    "uv": [
+      0.1875,
+      0.4375
+    ]
+  },
+  "Cut stem top": {
+    "hex": "#E2B775",
+    "roughness": 0.63,
+    "metallic": 0,
+    "uv": [
+      0.3125,
+      0.4375
+    ]
+  },
+  "Warm sand": {
+    "hex": "#D8AF77",
+    "roughness": 0.91,
+    "metallic": 0,
+    "uv": [
+      0.4375,
+      0.4375
+    ]
+  },
+  "Warm sand variation": {
+    "hex": "#CDA674",
+    "roughness": 0.93,
+    "metallic": 0,
+    "uv": [
+      0.5625,
+      0.4375
+    ]
+  },
+  "Foliage muted green": {
+    "hex": "#729342",
+    "roughness": 0.72,
+    "metallic": 0,
+    "uv": [
+      0.6875,
+      0.4375
+    ]
+  },
+  "Foliage shadow": {
+    "hex": "#53723A",
+    "roughness": 0.79,
+    "metallic": 0,
+    "uv": [
+      0.8125,
+      0.4375
+    ]
+  },
+  "Foliage edge": {
+    "hex": "#8FA650",
+    "roughness": 0.73,
+    "metallic": 0,
+    "uv": [
+      0.9375,
+      0.4375
+    ]
+  },
+  "Barn muted red": {
+    "hex": "#A64F3F",
+    "roughness": 0.69,
+    "metallic": 0,
+    "uv": [
+      0.0625,
+      0.3125
+    ]
+  },
+  "Barn plank shade": {
+    "hex": "#934336",
+    "roughness": 0.72,
+    "metallic": 0,
+    "uv": [
+      0.1875,
+      0.3125
+    ]
+  },
+  "Barn slate roof": {
+    "hex": "#69635B",
+    "roughness": 0.75,
+    "metallic": 0,
+    "uv": [
+      0.3125,
+      0.3125
+    ]
+  },
+  "Covered crop cloth": {
+    "hex": "#6A8E83",
+    "roughness": 0.8,
+    "metallic": 0,
+    "uv": [
+      0.4375,
+      0.3125
+    ]
+  },
+  "Warm white flower": {
+    "hex": "#F1E1B2",
+    "roughness": 0.72,
+    "metallic": 0,
+    "uv": [
+      0.5625,
+      0.3125
+    ]
+  }
+}

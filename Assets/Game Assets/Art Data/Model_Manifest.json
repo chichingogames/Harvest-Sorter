@@ -1,0 +1,413 @@
+{
+  "Belt_Straight_2m": {
+    "anchors": {
+      "Entry": [
+        0,
+        0,
+        0.3
+      ],
+      "Exit": [
+        2,
+        0,
+        0.3
+      ]
+    },
+    "triangleCounts": {
+      "Body": 324,
+      "BeltSurface": 108,
+      "Slats": 1296
+    }
+  },
+  "Belt_Corner_90_Left": {
+    "anchors": {
+      "Entry": [
+        0,
+        0,
+        0.3
+      ],
+      "Exit": [
+        1.08,
+        1.08,
+        0.3
+      ]
+    },
+    "triangleCounts": {
+      "Body": 1404,
+      "BeltSurface": 468,
+      "Slats": 1416
+    }
+  },
+  "Belt_SidePort_Left": {
+    "anchors": {
+      "Entry": [
+        0,
+        0,
+        0.3
+      ],
+      "Exit": [
+        2,
+        0,
+        0.3
+      ],
+      "Port": [
+        1,
+        0.542,
+        0.286
+      ]
+    },
+    "triangleCounts": {
+      "Body": 648,
+      "BeltSurface": 108,
+      "Slats": 1296
+    }
+  },
+  "Belt_SidePort_Right": {
+    "anchors": {
+      "Entry": [
+        0,
+        0,
+        0.3
+      ],
+      "Exit": [
+        2,
+        0,
+        0.3
+      ],
+      "Port": [
+        1,
+        -0.542,
+        0.286
+      ]
+    },
+    "triangleCounts": {
+      "Body": 648,
+      "BeltSurface": 108,
+      "Slats": 1296
+    }
+  },
+  "Belt_Return_Tunnel": {
+    "anchors": {
+      "VisibleEntry": [
+        0,
+        0,
+        0.3
+      ],
+      "ReturnEnd": [
+        1,
+        0,
+        0.3
+      ]
+    },
+    "triangleCounts": {
+      "Body": 756,
+      "BeltSurface": 108,
+      "Slats": 648
+    }
+  },
+  "Belt_Raised_Crossing": {
+    "anchors": {
+      "LowerA": [
+        -2.45,
+        0,
+        0.3
+      ],
+      "LowerB": [
+        2.45,
+        0,
+        0.3
+      ],
+      "UpperA": [
+        0,
+        -2.45,
+        0.3
+      ],
+      "UpperB": [
+        0,
+        2.45,
+        0.3
+      ],
+      "UpperCenter": [
+        0,
+        0,
+        0.96
+      ]
+    },
+    "triangleCounts": {
+      "Body": 1008,
+      "BeltSurface": 264,
+      "Slats": 6744
+    }
+  },
+  "Belt_Direction_Chevrons": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 432
+    }
+  },
+  "Tray_Six_Pocket": {
+    "anchors": {
+      "LidSeat": [
+        0,
+        0,
+        0.412
+      ],
+      "Pocket_1": [
+        -0.388,
+        0.583,
+        0.217
+      ],
+      "Pocket_2": [
+        0.388,
+        0.583,
+        0.217
+      ],
+      "Pocket_3": [
+        -0.388,
+        0,
+        0.217
+      ],
+      "Pocket_4": [
+        0.388,
+        0,
+        0.217
+      ],
+      "Pocket_5": [
+        -0.388,
+        -0.583,
+        0.217
+      ],
+      "Pocket_6": [
+        0.388,
+        -0.583,
+        0.217
+      ]
+    },
+    "triangleCounts": {
+      "Body": 2164
+    }
+  },
+  "Tray_Side_Intake": {
+    "anchors": {
+      "BeltSeam": [
+        0,
+        0,
+        0.286
+      ],
+      "TrayEdge": [
+        0,
+        0.5,
+        0.3
+      ]
+    },
+    "triangleCounts": {
+      "Body": 648
+    }
+  },
+  "Crate_Lid_Corn": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 2256
+    }
+  },
+  "Crate_Lid_Pepper": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 2460
+    }
+  },
+  "Covered_Crop_Insert": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 436
+    }
+  },
+  "Corn_Loose": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 1192
+    }
+  },
+  "Pepper_Loose": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 536
+    }
+  },
+  "Corn_Planted": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 840
+    }
+  },
+  "Pepper_Planted": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 724
+    }
+  },
+  "Corn_Planted_Patch": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 12600
+    }
+  },
+  "Pepper_Planted_Patch": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 10860
+    }
+  },
+  "Corn_Pocket_Cluster": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 1640
+    }
+  },
+  "Pepper_Pocket_Cluster": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 2280
+    }
+  },
+  "Field_Cut_Stubble": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 840
+    }
+  },
+  "Field_Soil_Bed": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 2124
+    }
+  },
+  "Mint_Harvester": {
+    "anchors": {
+      "DrumPivot": [
+        0.38,
+        0,
+        0.239
+      ],
+      "CropExit": [
+        0.48,
+        0.02,
+        0.49
+      ]
+    },
+    "triangleCounts": {
+      "Body": 728,
+      "CutterDrum": 704,
+      "Wheels": 560
+    }
+  },
+  "Market_Truck": {
+    "anchors": {
+      "OrderSlot_1": [
+        -0.958,
+        0,
+        0.453
+      ],
+      "OrderSlot_2": [
+        0.039,
+        0,
+        0.453
+      ]
+    },
+    "triangleCounts": {
+      "Body": 2792,
+      "Wheels": 1968
+    }
+  },
+  "Market_Truck_Single": {
+    "anchors": {
+      "OrderSlot_1": [
+        -0.46,
+        0,
+        0.453
+      ]
+    },
+    "triangleCounts": {
+      "Body": 2684,
+      "Wheels": 1968
+    }
+  },
+  "Order_Marker_Corn": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 192
+    }
+  },
+  "Order_Marker_Pepper": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 396
+    }
+  },
+  "Yard_Ground_Tile": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 108
+    }
+  },
+  "Yard_Leaf_Cluster": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 1178
+    }
+  },
+  "Yard_Fence_Segment": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 648
+    }
+  },
+  "Yard_Barn_Fragment": {
+    "anchors": {},
+    "triangleCounts": {
+      "Body": 3132
+    }
+  },
+  "Belt_Loop_Level_01": {
+    "anchors": {
+      "Tray_Port_A": [
+        0,
+        -1.558,
+        0.286
+      ],
+      "Harvest_Entry": [
+        -1.92,
+        -2.1,
+        0.3
+      ]
+    },
+    "triangleCounts": {
+      "Body": 6216,
+      "BeltSurface": 1332,
+      "Slats": 13584
+    }
+  },
+  "Belt_Loop_Level_02": {
+    "anchors": {
+      "Tray_Port_A": [
+        -1.1,
+        -1.558,
+        0.286
+      ],
+      "Tray_Port_B": [
+        1.1,
+        -1.558,
+        0.286
+      ],
+      "Harvest_Entry": [
+        -1.92,
+        -2.1,
+        0.3
+      ]
+    },
+    "triangleCounts": {
+      "Body": 6540,
+      "BeltSurface": 1332,
+      "Slats": 13848
+    }
+  }
+}

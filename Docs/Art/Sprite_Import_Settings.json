@@ -1,0 +1,223 @@
+{
+  "Plaque_Ivory": {
+    "size": [
+      512,
+      136
+    ],
+    "borderPixels": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Field_Tag_Ivory": {
+    "size": [
+      288,
+      76
+    ],
+    "borderPixels": [
+      19,
+      19,
+      19,
+      19
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Order_Plaque": {
+    "size": [
+      480,
+      132
+    ],
+    "borderPixels": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Result_Panel": {
+    "size": [
+      620,
+      326
+    ],
+    "borderPixels": [
+      22,
+      22,
+      22,
+      22
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Settings_Button_Base": {
+    "size": [
+      104,
+      104
+    ],
+    "borderPixels": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Primary_Button": {
+    "size": [
+      344,
+      86
+    ],
+    "borderPixels": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Primary_Button_Pressed": {
+    "size": [
+      344,
+      86
+    ],
+    "borderPixels": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Capacity_Track": {
+    "size": [
+      320,
+      42
+    ],
+    "borderPixels": [
+      19,
+      19,
+      19,
+      19
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Capacity_Fill": {
+    "size": [
+      320,
+      42
+    ],
+    "borderPixels": [
+      19,
+      19,
+      19,
+      19
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Icon_Settings": {
+    "size": [
+      100,
+      100
+    ],
+    "borderPixels": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Icon_Belt": {
+    "size": [
+      100,
+      100
+    ],
+    "borderPixels": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Icon_Closed": {
+    "size": [
+      100,
+      100
+    ],
+    "borderPixels": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Icon_Check": {
+    "size": [
+      100,
+      100
+    ],
+    "borderPixels": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Icon_Crate": {
+    "size": [
+      100,
+      100
+    ],
+    "borderPixels": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Icon_Retry": {
+    "size": [
+      100,
+      100
+    ],
+    "borderPixels": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Icon_Sound": {
+    "size": [
+      100,
+      100
+    ],
+    "borderPixels": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "pixelsPerUnit": 100
+  },
+  "Icon_Mute": {
+    "size": [
+      100,
+      100
+    ],
+    "borderPixels": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "pixelsPerUnit": 100
+  }
+}
