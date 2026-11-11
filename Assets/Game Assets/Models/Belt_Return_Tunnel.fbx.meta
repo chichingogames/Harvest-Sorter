@@ -7,28 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Belt_Return_Tunnel_BeltDeepTeal
-    second: {fileID: 2100000, guid: 52deaa75383d422a94b4a5f0befac29f, type: 2}
+      name: HS_Belt_deep_teal
+    second: {fileID: 2100000, guid: 1366a159918891b4c9e55449bff8436f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Belt_Return_Tunnel_BeltFrame
-    second: {fileID: 2100000, guid: 5aadca14e06547bf869a1938493fe09e, type: 2}
+      name: HS_Belt_frame
+    second: {fileID: 2100000, guid: 78f237def7ff8764a9091bb6c4c19d20, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Belt_Return_Tunnel_BeltSlatAlternate
-    second: {fileID: 2100000, guid: c627ba96a56f40f5891190faf389a6e2, type: 2}
+      name: HS_Belt_slat_alternate
+    second: {fileID: 2100000, guid: 7c9537654bd9e254d983d16b74e75348, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Belt_Return_Tunnel_IvoryEnamel
-    second: {fileID: 2100000, guid: 75b23c186c624a349650fa70a207036a, type: 2}
+      name: HS_Ivory_enamel
+    second: {fileID: 2100000, guid: dbc5cc6df852ddc4b97bf140b76357da, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Belt_Return_Tunnel_MarketPetrolTeal
-    second: {fileID: 2100000, guid: 338955d1e1f0495abd630c4e1b111654, type: 2}
+      name: HS_Market_petrol_teal
+    second: {fileID: 2100000, guid: 634efac7016984742aaad42f281fe0d7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

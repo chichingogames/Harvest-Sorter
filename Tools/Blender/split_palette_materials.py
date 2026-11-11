@@ -2,10 +2,11 @@
 
 blender -b --factory-startup -P split_palette_materials.py -- <models_dir> <swatches.json> <out_dir> <mode: analyze|convert> <surface_materials.json>
 
-Each face is assigned to the HS_Palette.png swatch cell its UVs sit in, and gets a solid-colour material
-named <Model>_<SwatchName>. "analyze" only writes report_analyze.json; "convert" also writes the split FBX
-files to out_dir. Unity side: one .mat per material in Materials/<Model>/ and an externalObjects remap per
-name in the model's .fbx.meta.
+Each face is assigned to the HS_Palette.png swatch cell its UVs sit in, and gets the material of that
+swatch's surface, named as in HS_Surface_Materials.json (e.g. "HS_Honey_oak"), so every model that uses a
+colour carries the same material name. "analyze" only writes report_analyze.json; "convert" also writes the
+split FBX files to out_dir. Unity side: Harvest Sorter > Apply Surface Materials remaps each name to the
+shared Materials/<Family>/<name>.mat.
 
 In "convert" mode UV channel 0 is rewritten with a box projection in model space, in units of the face's
 surface tileMeters (HS_Surface_Materials.json), so the tileable surface textures repeat at their real-world
@@ -17,15 +18,12 @@ from collections import Counter, defaultdict
 models_dir, swatch_json, out_dir, mode, surface_json = sys.argv[sys.argv.index("--") + 1:]
 N = 8
 swatches = json.load(open(swatch_json))
-tile_of = {m["sourceName"]: m["tileMeters"] for m in json.load(open(surface_json))["materials"]}
+surfaces = {m["sourceName"]: m for m in json.load(open(surface_json))["materials"]}
+tile_of = {k: m["tileMeters"] for k, m in surfaces.items()}
 cell_to_swatch = {}
 for name, s in swatches.items():
     u, v = s["uv"]
     cell_to_swatch[(int(u * N), int(v * N))] = name
-
-
-def pascal(name):
-    return "".join(w[:1].upper() + w[1:] for w in name.replace("-", " ").split())
 
 
 def srgb_to_linear(c):
@@ -101,7 +99,7 @@ for f in sorted(os.listdir(models_dir)):
         for name in sorted(set(face_swatch), key=lambda n: (n is None, n or "")):
             key = name or "Unmapped"
             if key not in mats:
-                m = bpy.data.materials.new(f"{model}_{pascal(key)}")
+                m = bpy.data.materials.new(surfaces[name]["name"] if name else "HS_Unmapped")
                 if name:
                     h = swatches[name]["hex"].lstrip("#")
                     rgb = [srgb_to_linear(int(h[i:i + 2], 16) / 255) for i in (0, 2, 4)]

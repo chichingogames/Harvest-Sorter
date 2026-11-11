@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Order_Marker_Pepper_EngravedOak
-    second: {fileID: 2100000, guid: 21749a065d634b8ea68621f491b95d85, type: 2}
+      name: HS_Engraved_oak
+    second: {fileID: 2100000, guid: 2e1daca7121ac09478ea110ed3c6280f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

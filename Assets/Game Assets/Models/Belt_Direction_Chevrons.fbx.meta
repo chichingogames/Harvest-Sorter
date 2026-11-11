@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Belt_Direction_Chevrons_IvoryEnamel
-    second: {fileID: 2100000, guid: 5cbe86ca5ff441e6857012743ee2cb8e, type: 2}
+      name: HS_Ivory_enamel
+    second: {fileID: 2100000, guid: dbc5cc6df852ddc4b97bf140b76357da, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

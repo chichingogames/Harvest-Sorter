@@ -7,33 +7,33 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Pepper_Planted_LeafDark
-    second: {fileID: 2100000, guid: 7218df3056064f04912ceb1fa4061538, type: 2}
+      name: HS_Leaf_dark
+    second: {fileID: 2100000, guid: 58b76e6762aadb04d9a63f7229160098, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Pepper_Planted_LeafGreen
-    second: {fileID: 2100000, guid: 4d7a42346c424da3a26fab456c512ef2, type: 2}
+      name: HS_Leaf_green
+    second: {fileID: 2100000, guid: 3c250f95d7a270d4db8bf5b9277e30e3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Pepper_Planted_LeafHighlight
-    second: {fileID: 2100000, guid: 8eff175113e741ae85381b2d33e9f5ae, type: 2}
+      name: HS_Leaf_highlight
+    second: {fileID: 2100000, guid: 5f28810c048dd6248ab047748ea5921b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Pepper_Planted_PepperLight
-    second: {fileID: 2100000, guid: c50d0e6239a74f8e85247ca2c5abeec8, type: 2}
+      name: HS_Pepper_light
+    second: {fileID: 2100000, guid: ccc9b3fda5cd0db49b8f1b0022731488, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Pepper_Planted_PepperRed
-    second: {fileID: 2100000, guid: 67a4cd31621d4d618b39de0dfc0b2dc4, type: 2}
+      name: HS_Pepper_red
+    second: {fileID: 2100000, guid: ba0f740f0ed8c6f41a4caf35341d96eb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Pepper_Planted_PepperShadow
-    second: {fileID: 2100000, guid: 7504062c59484eb5aae9a4cb099f889c, type: 2}
+      name: HS_Pepper_shadow
+    second: {fileID: 2100000, guid: 14f58337d91ddd84194c5b294bb47bf2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

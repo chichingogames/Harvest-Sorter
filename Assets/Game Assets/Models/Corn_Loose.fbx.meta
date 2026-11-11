@@ -7,28 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Corn_Loose_CornAmber
-    second: {fileID: 2100000, guid: 4923cf4fd553406f90d4b8e494899dae, type: 2}
+      name: HS_Corn_amber
+    second: {fileID: 2100000, guid: 8551659b9f721334abe280da0c5c4611, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Corn_Loose_CornGold
-    second: {fileID: 2100000, guid: 6aff6f43827b4bd79a3fb7a9546b28ea, type: 2}
+      name: HS_Corn_gold
+    second: {fileID: 2100000, guid: 3aa5ad1f0dd2a8d4e89bace130dd0e40, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Corn_Loose_CornLight
-    second: {fileID: 2100000, guid: baaa597c23ab449996ec758485be1632, type: 2}
+      name: HS_Corn_light
+    second: {fileID: 2100000, guid: 3f58b45f6fac57d4aa4f9e28f7882709, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Corn_Loose_LeafGreen
-    second: {fileID: 2100000, guid: 335e1010f5a84b14bf98cda380b63a35, type: 2}
+      name: HS_Leaf_green
+    second: {fileID: 2100000, guid: 3c250f95d7a270d4db8bf5b9277e30e3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Corn_Loose_LeafHighlight
-    second: {fileID: 2100000, guid: 20a19ec93c1e4da4aff58efdba88b226, type: 2}
+      name: HS_Leaf_highlight
+    second: {fileID: 2100000, guid: 5f28810c048dd6248ab047748ea5921b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

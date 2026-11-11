@@ -7,23 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Belt_Corner_90_Left_BeltDeepTeal
-    second: {fileID: 2100000, guid: 5a5bc15553734a87a02274dcc1cf40d7, type: 2}
+      name: HS_Belt_deep_teal
+    second: {fileID: 2100000, guid: 1366a159918891b4c9e55449bff8436f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Belt_Corner_90_Left_BeltFrame
-    second: {fileID: 2100000, guid: ab39e4e59e844411b844e1b4d78a6632, type: 2}
+      name: HS_Belt_frame
+    second: {fileID: 2100000, guid: 78f237def7ff8764a9091bb6c4c19d20, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Belt_Corner_90_Left_BeltSlatAlternate
-    second: {fileID: 2100000, guid: b0852b17757840d8b9d49104266139b6, type: 2}
+      name: HS_Belt_slat_alternate
+    second: {fileID: 2100000, guid: 7c9537654bd9e254d983d16b74e75348, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Belt_Corner_90_Left_IvoryEnamel
-    second: {fileID: 2100000, guid: ce943cda0d7b4782a38b3e17a17a7e5c, type: 2}
+      name: HS_Ivory_enamel
+    second: {fileID: 2100000, guid: dbc5cc6df852ddc4b97bf140b76357da, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

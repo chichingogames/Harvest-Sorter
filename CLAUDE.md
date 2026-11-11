@@ -83,26 +83,29 @@ and `unity command console get`.
 The art was exported from Blender (the source `.blend` isn't in the repo). Reference renders, including
 the level mock-ups and the model sheet, are in `Docs/Art/`.
 
-- **Materials (one per colour, per model):** the pack originally coloured everything through one palette
+- **Materials (shared, one per surface):** the pack originally coloured everything through one palette
   texture. The FBX files in `Game Assets/Models/` have since been re-exported with
-  `Tools/Blender/split_palette_materials.py`, which gives each face a material for the palette swatch its
-  UVs sat in. A model therefore has one material slot per colour it uses, named `<Model>_<SwatchName>`, for
-  example `Market_Truck_Tire`. Each slot is remapped in the model's `.fbx.meta` (`externalObjects`) to a
-  URP Lit material at `Materials/<Model>/<Model>_<SwatchName>.mat`. There are 147 materials in total, and
-  none are shared between models, so editing one never affects another model.
-- **Surface textures:** each swatch has a tileable albedo and a normal map family in
-  `Textures/Surfaces/`, listed in `Art Data/HS_Surface_Materials.json` with its `tileMeters`, metallic and
-  roughness. Menu **Harvest Sorter > Apply Surface Textures** (`Scripts/Editor/SurfaceMaterialBuilder.cs`,
-  re-runnable) sets the import settings (normal maps as Normal Map, Repeat wrap) and gives every material
-  its albedo, normal map, metallic and smoothness (1 - roughness), with `_BaseColor` white because the
-  albedo already carries the swatch colour. It matches a material to a surface by the `<SwatchName>`
-  suffix. The textures repeat at real-world size because the Blender script rewrites **UV0 ("Surface")**
-  as a box projection in model space, in units of that face's `tileMeters`, so material tiling stays
-  (1, 1). The original palette UVs are kept in **UV1 ("Palette")**; `Textures/HS_Palette.png` is unused.
+  `Tools/Blender/split_palette_materials.py`, which gives each face the material of the palette swatch its
+  UVs sat in, named after that swatch's surface in `Art Data/HS_Surface_Materials.json` (for example
+  `HS_Belt_deep_teal`). Every model using a colour therefore shares one material: all belt models use the
+  same `HS_Belt_*` and `HS_Ivory_enamel` materials, so editing a material changes it on every model that
+  uses it. The materials are URP Lit, at `Materials/<Family>/<name>.mat` (Enamel, Wood, Rubber, Foliage, and
+  so on). There are 45, and 42 of them are used. Each model's `.fbx.meta` remaps its slots to them by name
+  (`externalObjects`).
+- **Surface textures:** each surface has a tileable albedo and a normal map family in `Textures/Surfaces/`,
+  with its `tileMeters`, metallic and roughness listed in the surface JSON. Menu
+  **Harvest Sorter > Apply Surface Materials** (`Scripts/Editor/SurfaceMaterialBuilder.cs`, re-runnable)
+  sets the texture import settings and creates or updates the 45 materials. Each gets its albedo, normal
+  map, metallic and smoothness (1 - roughness), with `_BaseColor` white because the albedo already carries
+  the colour. The builder then rewrites every model's material remaps. Materials are updated in place, so
+  their GUIDs survive. The textures repeat at real-world size because the Blender script rewrites
+  **UV0 ("Surface")** as a box projection in model space, in units of that face's `tileMeters`, so
+  material tiling stays (1, 1). The original palette UVs are kept in **UV1 ("Palette")**;
+  `Textures/HS_Palette.png` is unused.
 - **New models** need the same treatment: run the Blender script in `convert` mode on them
-  (`-- <models_dir> <HS_Swatches.json> <out_dir> convert <HS_Surface_Materials.json>`), create the `.mat`
-  files and `.fbx.meta` remaps, then run Apply Surface Textures. A slot without a remap falls back to the
-  material Unity generates from the FBX.
+  (`-- <models_dir> <HS_Swatches.json> <out_dir> convert <HS_Surface_Materials.json>`), copy the FBX files in,
+  then run Apply Surface Materials. A slot whose name matches no surface logs a warning and falls back to
+  the material Unity generates from the FBX.
 - **Axes and scale:** the FBX files are exported with Blender's "Apply Transform" and "FBX All" scaling, so
   every model root imports with no rotation, scale 1, real-world metres and Y up. A default Blender export
   gives roots a (90, 0, 0) rotation and ×100 scale; the artist's original files had this. Blender

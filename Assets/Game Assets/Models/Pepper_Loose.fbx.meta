@@ -7,28 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Pepper_Loose_LeafDark
-    second: {fileID: 2100000, guid: 1b5664669c61474bae4dc5296a04d6ef, type: 2}
+      name: HS_Leaf_dark
+    second: {fileID: 2100000, guid: 58b76e6762aadb04d9a63f7229160098, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Pepper_Loose_LeafGreen
-    second: {fileID: 2100000, guid: 5fe73e48977d464d915cd1c354575543, type: 2}
+      name: HS_Leaf_green
+    second: {fileID: 2100000, guid: 3c250f95d7a270d4db8bf5b9277e30e3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Pepper_Loose_PepperLight
-    second: {fileID: 2100000, guid: 3aa19c68954842199c22068a5f57e9da, type: 2}
+      name: HS_Pepper_light
+    second: {fileID: 2100000, guid: ccc9b3fda5cd0db49b8f1b0022731488, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Pepper_Loose_PepperRed
-    second: {fileID: 2100000, guid: 591f04681f894e0093fb54e6991bdde1, type: 2}
+      name: HS_Pepper_red
+    second: {fileID: 2100000, guid: ba0f740f0ed8c6f41a4caf35341d96eb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Pepper_Loose_PepperShadow
-    second: {fileID: 2100000, guid: 0aa74cf31f3e40dca9ae291d0389572b, type: 2}
+      name: HS_Pepper_shadow
+    second: {fileID: 2100000, guid: 14f58337d91ddd84194c5b294bb47bf2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

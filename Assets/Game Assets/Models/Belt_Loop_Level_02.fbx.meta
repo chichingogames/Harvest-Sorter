@@ -7,23 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Belt_Loop_Level_02_BeltDeepTeal
-    second: {fileID: 2100000, guid: afa55cbaa9264c528522859bbed2f146, type: 2}
+      name: HS_Belt_deep_teal
+    second: {fileID: 2100000, guid: 1366a159918891b4c9e55449bff8436f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Belt_Loop_Level_02_BeltFrame
-    second: {fileID: 2100000, guid: 055cacc0efb44c40b8b62a15fd1838c0, type: 2}
+      name: HS_Belt_frame
+    second: {fileID: 2100000, guid: 78f237def7ff8764a9091bb6c4c19d20, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Belt_Loop_Level_02_BeltSlatAlternate
-    second: {fileID: 2100000, guid: c975bd1f33af4888951aa4da76efa3a6, type: 2}
+      name: HS_Belt_slat_alternate
+    second: {fileID: 2100000, guid: 7c9537654bd9e254d983d16b74e75348, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Belt_Loop_Level_02_IvoryEnamel
-    second: {fileID: 2100000, guid: 495264bc836149d7b53ad83baf7e0510, type: 2}
+      name: HS_Ivory_enamel
+    second: {fileID: 2100000, guid: dbc5cc6df852ddc4b97bf140b76357da, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

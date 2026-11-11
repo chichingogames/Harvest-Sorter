@@ -7,13 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Field_Cut_Stubble_CutStalkGold
-    second: {fileID: 2100000, guid: 9c0d89c9f4164736aad8327f4c124d32, type: 2}
+      name: HS_Cut_stalk_gold
+    second: {fileID: 2100000, guid: 5693023d650ae1f4198178b93a3c28da, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Field_Cut_Stubble_CutStemTop
-    second: {fileID: 2100000, guid: f77d9e58a6f14e6987eed3f90e64044a, type: 2}
+      name: HS_Cut_stem_top
+    second: {fileID: 2100000, guid: fcc4387dd7f970a468652053382a0c1e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

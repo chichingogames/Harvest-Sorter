@@ -7,28 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Tray_Six_Pocket_Brass
-    second: {fileID: 2100000, guid: 74e6fefe1df84b2b9dcb375cc3ee6d27, type: 2}
+      name: HS_Brass
+    second: {fileID: 2100000, guid: 125c7c38c87ffd44bab68f9672bdde5d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Tray_Six_Pocket_HoneyOak
-    second: {fileID: 2100000, guid: 586d95ebd76e4973aabef947753e927f, type: 2}
+      name: HS_Honey_oak
+    second: {fileID: 2100000, guid: a19f68f0f90b73f47b152f615a78faf8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Tray_Six_Pocket_OakRecess
-    second: {fileID: 2100000, guid: 3253af9cf1174f7f901a115ac5a0fbbb, type: 2}
+      name: HS_Oak_recess
+    second: {fileID: 2100000, guid: 9d89137fac642204ab053539b60eeb8c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Tray_Six_Pocket_OakRim
-    second: {fileID: 2100000, guid: 05ab66c0215c4410b9a6437e1dca0fbc, type: 2}
+      name: HS_Oak_rim
+    second: {fileID: 2100000, guid: b613049e64a18034fb989c1cf8a1b3d5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Tray_Six_Pocket_OakSlats
-    second: {fileID: 2100000, guid: ddf40b0a02a0433cb9f6b3f33c18c5dd, type: 2}
+      name: HS_Oak_slats
+    second: {fileID: 2100000, guid: 2267598b9add2444ca29abadaafd7a6d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

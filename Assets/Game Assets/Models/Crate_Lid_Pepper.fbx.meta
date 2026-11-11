@@ -7,38 +7,38 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Crate_Lid_Pepper_Brass
-    second: {fileID: 2100000, guid: 7e1c3764e2c4428d8c128ef259089862, type: 2}
+      name: HS_Brass
+    second: {fileID: 2100000, guid: 125c7c38c87ffd44bab68f9672bdde5d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Crate_Lid_Pepper_CrateSealGreen
-    second: {fileID: 2100000, guid: 5b60d6d1d62744759405f4623baa246d, type: 2}
+      name: HS_Crate_seal_green
+    second: {fileID: 2100000, guid: e5eb31ebbc952bb498d94819e0d66e8b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Crate_Lid_Pepper_EngravedOak
-    second: {fileID: 2100000, guid: 9fd810b1cfc346288fe9f717f046ad09, type: 2}
+      name: HS_Engraved_oak
+    second: {fileID: 2100000, guid: 2e1daca7121ac09478ea110ed3c6280f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Crate_Lid_Pepper_IvoryEnamel
-    second: {fileID: 2100000, guid: ebe860ef46474822847ba1354e8cc653, type: 2}
+      name: HS_Ivory_enamel
+    second: {fileID: 2100000, guid: dbc5cc6df852ddc4b97bf140b76357da, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Crate_Lid_Pepper_OakRim
-    second: {fileID: 2100000, guid: a8406bcdd84c44669c6b42bc74ce9af9, type: 2}
+      name: HS_Oak_rim
+    second: {fileID: 2100000, guid: b613049e64a18034fb989c1cf8a1b3d5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Crate_Lid_Pepper_OakSlatVariation
-    second: {fileID: 2100000, guid: 362789f52cc44d3bac878b235f2eb066, type: 2}
+      name: HS_Oak_slat_variation
+    second: {fileID: 2100000, guid: b73465bc74c86ce4ab2e763a4e8b9ad6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Crate_Lid_Pepper_OakSlats
-    second: {fileID: 2100000, guid: bb8737746ca34539b3eec5109b9a4ae4, type: 2}
+      name: HS_Oak_slats
+    second: {fileID: 2100000, guid: 2267598b9add2444ca29abadaafd7a6d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

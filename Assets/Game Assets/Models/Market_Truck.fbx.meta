@@ -7,58 +7,58 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Market_Truck_HoneyOak
-    second: {fileID: 2100000, guid: 337332c712ab4c18a7bdb106e2d7e627, type: 2}
+      name: HS_Honey_oak
+    second: {fileID: 2100000, guid: a19f68f0f90b73f47b152f615a78faf8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Market_Truck_IvoryEnamel
-    second: {fileID: 2100000, guid: 9e9437ef4f7d4f52bcf79194ccbe8c23, type: 2}
+      name: HS_Ivory_enamel
+    second: {fileID: 2100000, guid: dbc5cc6df852ddc4b97bf140b76357da, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Market_Truck_MarketPetrolTeal
-    second: {fileID: 2100000, guid: bdc445a07b8e4f6ea971fbe9c2db4d58, type: 2}
+      name: HS_Market_petrol_teal
+    second: {fileID: 2100000, guid: 634efac7016984742aaad42f281fe0d7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Market_Truck_OakRim
-    second: {fileID: 2100000, guid: 24e275cd5a024ba189d69d2c27a1b26f, type: 2}
+      name: HS_Oak_rim
+    second: {fileID: 2100000, guid: b613049e64a18034fb989c1cf8a1b3d5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Market_Truck_OakSlatVariation
-    second: {fileID: 2100000, guid: d59dd12227854abface229673ca71eff, type: 2}
+      name: HS_Oak_slat_variation
+    second: {fileID: 2100000, guid: b73465bc74c86ce4ab2e763a4e8b9ad6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Market_Truck_OakSlats
-    second: {fileID: 2100000, guid: 6427d6965cc64c15b4d6580ac2bb7358, type: 2}
+      name: HS_Oak_slats
+    second: {fileID: 2100000, guid: 2267598b9add2444ca29abadaafd7a6d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Market_Truck_SatinSteel
-    second: {fileID: 2100000, guid: fa0100ac6cd1401ab19131444f288ac0, type: 2}
+      name: HS_Satin_steel
+    second: {fileID: 2100000, guid: 03a2158bc4a176f4dac6238af94f6c87, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Market_Truck_Tire
-    second: {fileID: 2100000, guid: 2762dd863ea74a08bded7004a0b3817c, type: 2}
+      name: HS_Tire
+    second: {fileID: 2100000, guid: 734b94348bd8ffc40a88e6f7148e0768, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Market_Truck_TruckShadows
-    second: {fileID: 2100000, guid: 91d702dcc7fa47719f6d5bea54d9e4e3, type: 2}
+      name: HS_Truck_shadows
+    second: {fileID: 2100000, guid: 0651c3039f3599c4482bac4689a24995, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Market_Truck_WindowBlue
-    second: {fileID: 2100000, guid: fa163aabd5ce41ac887a9dd1221d71bb, type: 2}
+      name: HS_Window_blue
+    second: {fileID: 2100000, guid: 8aeba580d2097da408a5bea7b0e17dbc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Market_Truck_WindowHighlight
-    second: {fileID: 2100000, guid: 81fad55733be418db466842a3ac3d70c, type: 2}
+      name: HS_Window_highlight
+    second: {fileID: 2100000, guid: bbdd66414956de64cb7a3b61e70a4e74, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

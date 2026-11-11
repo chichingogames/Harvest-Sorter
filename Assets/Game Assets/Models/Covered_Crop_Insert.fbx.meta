@@ -7,18 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Covered_Crop_Insert_Brass
-    second: {fileID: 2100000, guid: 18b0dd2876174aa4af07197d7fb8cf4e, type: 2}
+      name: HS_Brass
+    second: {fileID: 2100000, guid: 125c7c38c87ffd44bab68f9672bdde5d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Covered_Crop_Insert_CoveredCropCloth
-    second: {fileID: 2100000, guid: 869a2d0702dd42e684c3c32c85ac4e99, type: 2}
+      name: HS_Covered_crop_cloth
+    second: {fileID: 2100000, guid: 7bbd54fa201ffba4e912793d75ecc429, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Covered_Crop_Insert_IvoryEnamel
-    second: {fileID: 2100000, guid: b12d47bbe8d04851b438d414957569c4, type: 2}
+      name: HS_Ivory_enamel
+    second: {fileID: 2100000, guid: dbc5cc6df852ddc4b97bf140b76357da, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

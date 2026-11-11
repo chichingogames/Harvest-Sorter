@@ -7,38 +7,38 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mint_Harvester_Brass
-    second: {fileID: 2100000, guid: 9e51aed3666b41359593619ac759685c, type: 2}
+      name: HS_Brass
+    second: {fileID: 2100000, guid: 125c7c38c87ffd44bab68f9672bdde5d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mint_Harvester_HarvesterMint
-    second: {fileID: 2100000, guid: cc1a577274664fb5bd2ff1ea7ca1a631, type: 2}
+      name: HS_Harvester_mint
+    second: {fileID: 2100000, guid: 1f29008d03695764a95a1c23ecff671a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mint_Harvester_HarvesterTrim
-    second: {fileID: 2100000, guid: 2c2946f138cc4a2c9d135396381ec811, type: 2}
+      name: HS_Harvester_trim
+    second: {fileID: 2100000, guid: da5e151135c117f499b3c0ccd81827fe, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mint_Harvester_IvoryEnamel
-    second: {fileID: 2100000, guid: 29d4df5657574915bdf1211a73355232, type: 2}
+      name: HS_Ivory_enamel
+    second: {fileID: 2100000, guid: dbc5cc6df852ddc4b97bf140b76357da, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mint_Harvester_MarketPetrolTeal
-    second: {fileID: 2100000, guid: 6496a8a9828849268cb6978d6b472c16, type: 2}
+      name: HS_Market_petrol_teal
+    second: {fileID: 2100000, guid: 634efac7016984742aaad42f281fe0d7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mint_Harvester_SatinSteel
-    second: {fileID: 2100000, guid: 0233cbe3c2874d959c0564205ff0956c, type: 2}
+      name: HS_Satin_steel
+    second: {fileID: 2100000, guid: 03a2158bc4a176f4dac6238af94f6c87, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mint_Harvester_Tire
-    second: {fileID: 2100000, guid: 5563863093ec4a12b9778e046d2c3a24, type: 2}
+      name: HS_Tire
+    second: {fileID: 2100000, guid: 734b94348bd8ffc40a88e6f7148e0768, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

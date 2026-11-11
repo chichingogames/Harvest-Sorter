@@ -7,18 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Yard_Leaf_Cluster_FoliageEdge
-    second: {fileID: 2100000, guid: 28f1377f120b4a92a07cf73d1cd435d2, type: 2}
+      name: HS_Foliage_edge
+    second: {fileID: 2100000, guid: 0b920026c3f9f1e46a63b972e5853dcb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Yard_Leaf_Cluster_FoliageMutedGreen
-    second: {fileID: 2100000, guid: 40478e0b5e484e2fb1c8ea299279b3eb, type: 2}
+      name: HS_Foliage_muted_green
+    second: {fileID: 2100000, guid: 9d2d9a99540d5f6449302add93b35fc1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Yard_Leaf_Cluster_FoliageShadow
-    second: {fileID: 2100000, guid: 814d6d6deb0e4108b755f4bdfdd0d380, type: 2}
+      name: HS_Foliage_shadow
+    second: {fileID: 2100000, guid: 1094759775599124cbf4b498b91b7322, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
