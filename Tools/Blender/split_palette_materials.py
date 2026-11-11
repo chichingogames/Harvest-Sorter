@@ -92,9 +92,13 @@ for f in sorted(os.listdir(models_dir)):
                 bpy.data.materials.remove(m)
         for im in list(bpy.data.images):
             bpy.data.images.remove(im)
+        # FBX_SCALE_ALL + bake_space_transform: roots import into Unity with no rotation and scale 1,
+        # instead of the (90, 0, 0) / x100 root transform a default Blender export produces
         bpy.ops.export_scene.fbx(filepath=os.path.join(out_dir, f), use_selection=False,
                                  object_types={"EMPTY", "MESH"}, path_mode="STRIP",
-                                 embed_textures=False, bake_anim=False)
+                                 embed_textures=False, bake_anim=False,
+                                 apply_unit_scale=True, apply_scale_options="FBX_SCALE_ALL",
+                                 bake_space_transform=True, axis_forward="-Z", axis_up="Y")
     info["swatches"] = {(k or "UNMAPPED"): v for k, v in info["swatches"].items()}
     report[model] = info
 

@@ -64,6 +64,20 @@ rough compile check. `Library/`, `Temp/`, `Logs/`, `UserSettings/` are Unity cac
   wiring or Editor builders. Runtime code never touches `UnityEditor` without `#if UNITY_EDITOR`.
 - Naming: `Manager_X`, `PopUp_X`, `UI_X`; `[SerializeField] private _camelCase` exposed via expression-bodied properties.
 
+## Scene
+
+`Game.unity` is built by `Scripts/Editor/SceneBuilder.cs` (menu **Harvest Sorter > Build Base Scene**, or
+**Rebuild Level Art > Level N**). It is re-runnable: missing roots (`Managers`, `GamePlay`, `Canvas`
+with `Container/{InGame, PopUps}`, `Dark Area`, `Loading Screen`, `Transition Screen`, and `EventSystem`
+with `InputSystemUIInputModule`) are created and existing ones are kept. `GamePlay/Level Art` is deleted
+and regenerated from the "board" and "dressing" rows of `Art Data/Level_0N_Art_Layout.json`. The camera
+is orthographic and placed from the layout's camera block (size 6.625, portrait 1080×1920 canvas).
+`Managers` is empty until the manager scripts exist.
+
+The Pipeline package (`com.unity.pipeline`) is installed, so a running Editor can be driven with the
+`unity` CLI: `unity command eval --code '...'`, `unity recompile`, `unity command game_view --source camera`,
+and `unity command console get`.
+
 ## Art pack
 
 The art was exported from Blender (the source `.blend` isn't in the repo). Reference renders, including
@@ -82,8 +96,11 @@ the level mock-ups and the model sheet, are in `Docs/Art/`.
 - **New models** need the same treatment: run the Blender script in `convert` mode on them, then create the
   `.mat` files and `.fbx.meta` remaps. A slot without a remap falls back to the material Unity generates
   from the FBX.
-- **Axes:** the models are imported with `bakeAxisConversion` on, so their roots have no rotation. The Blender
-  data in `Art Data/` uses Z-up, so convert those coordinates before using them in Unity.
+- **Axes and scale:** the FBX files are exported with Blender's "Apply Transform" and "FBX All" scaling, so
+  every model root imports with no rotation, scale 1, real-world metres and Y up. A default Blender export
+  gives roots a (90, 0, 0) rotation and ×100 scale; the artist's original files had this. Blender
+  coordinates map to Unity as **(x, y, z) → (x, z, y)**, and a Blender yaw becomes the **negative** Unity Y
+  rotation. `Art Data/*.json` uses Blender coordinates.
 - **Anchor nodes:** models contain gameplay anchor transforms as named child nodes, for example `Entry`/`Exit`/`Port`
   on belts, `Pocket_1..6` and `LidSeat` on `Tray_Six_Pocket`, `OrderSlot_N` on trucks, and `CropExit`/`DrumPivot`
   on `Mint_Harvester`. `Art Data/Model_Manifest.json` lists them with positions.
